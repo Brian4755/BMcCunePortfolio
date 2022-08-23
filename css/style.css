@@ -1,0 +1,12 @@
+body {
+  margin: 150px 200px;
+  /* background-color: red; */
+}
+
+p {
+  font-size: 30px;
+}
+
+.section1, .section2 {
+  margin-bottom: 500px;
+}
