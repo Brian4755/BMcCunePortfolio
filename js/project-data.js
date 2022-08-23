@@ -1,3 +1,10 @@
+const menuIcon = document.querySelector(".menuIcon")
+
+menuIcon.addEventListener('click', function(e) {
+  menuIcon.classList.toggle("change")
+  console.log('this works')
+})
+
 // const sectionOne = document.querySelector('.section1')
 const sections = document.querySelectorAll('section')
 

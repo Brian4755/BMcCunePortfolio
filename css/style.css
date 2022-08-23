@@ -10,3 +10,33 @@ p {
 .section1, .section2 {
   margin-bottom: 500px;
 }
+
+.menuLine {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.navbarList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menuIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.change #line1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #line2 {
+  opacity: 0;
+}
+
+.change #line3 {
+  transform: rotate(45deg) translate(-10px, -6px);
+}
