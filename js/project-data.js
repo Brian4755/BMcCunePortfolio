@@ -1,8 +1,10 @@
 const menuIcon = document.querySelector(".menuIcon")
+const menuList = document.querySelector(".navbarList")
 
 menuIcon.addEventListener('click', function(e) {
   menuIcon.classList.toggle("change")
   console.log('this works')
+  menuList.classList.toggle("navbarChange")
 })
 
 // const sectionOne = document.querySelector('.section1')

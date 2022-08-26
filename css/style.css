@@ -1,10 +1,10 @@
 body {
-  margin: 150px 200px;
+  margin: 150px 10vw;
   /* background-color: red; */
 }
 
 p {
-  font-size: 30px;
+  font-size: 5vw;
 }
 
 .section1, .section2 {
@@ -17,16 +17,25 @@ p {
   background-color: black;
   margin: 6px 0;
   transition: 0.2s;
+  border-radius: 2.5px;
 }
 
 .navbarList {
   list-style-type: none;
   padding: 0;
+  margin-top: 100vh;
+  margin-left: 50vw;
+  transition: 3s;
 }
 
 .menuIcon {
   display: inline-block;
   cursor: pointer;
+  margin-left: 75vw;
+}
+
+.navbar {
+  position: fixed;
 }
 
 .change #line1 {
@@ -39,4 +48,27 @@ p {
 
 .change #line3 {
   transform: rotate(45deg) translate(-10px, -6px);
+}
+
+.navbarChange.navbarList {
+  background-color: red;
+  margin-top: 0vh;
+  transition: 3s;
+}
+
+#navbarBackground {
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  right: 0px;
+  top: 100px;
+  background-color: gray;
+  z-index: -1;
+  top: 100vh;
+  transition: 3s;
+}
+
+.navbarChange #navbarBackground {
+  top: 0vh;
+  transition: 3s;
 }
