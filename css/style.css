@@ -176,3 +176,8 @@ li {
   font-size: 3rem;
   margin-left: 5vw;
 }
+
+.section1, .section2, .section3 {
+  font-size: 2rem;
+  margin-top: 50rem;
+}
