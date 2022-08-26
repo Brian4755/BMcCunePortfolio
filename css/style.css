@@ -44,16 +44,40 @@ p {
   left: 0%;
 }
 
+#line1, #line2, #line3 {
+  animation: colorRevert 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(1, end);
+}
+
 .change #line1 {
   transform: rotate(-45deg) translate(-9px, 6px);
+  animation: colorChange 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s
 }
 
 .change #line2 {
   opacity: 0;
+  animation: colorChange 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s
 }
 
 .change #line3 {
   transform: rotate(45deg) translate(-10px, -6px);
+  animation: colorChange 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s
+}
+
+@keyframes colorChange {
+  100% {background-color: rgb(199, 201, 215);}
+}
+
+@keyframes colorRevert {
+  0% {background-color:rgb(199, 201, 215); opacity: 1;}
+  100% {background-color: black;}
 }
 
 .navbarChange.navbarList {
@@ -86,7 +110,7 @@ li {
   text-align: center;
   font-weight: 800;
   font-size: 7vmin;
-  color: rgb(151, 141, 131)
+  color: rgb(199, 201, 215)
 }
 
 #home {
@@ -174,10 +198,19 @@ li {
 
 .introTitle {
   font-size: 3rem;
-  margin-left: 5vw;
+  margin: 0%;
+  margin-top: 12vh;
+  text-align: center;
 }
 
 .section1, .section2, .section3 {
   font-size: 2rem;
   margin-top: 50rem;
+}
+
+.introTitleContainer {
+  position: absolute;
+  left: 0;
+  right: 36vw;
+  height: 60vh;
 }
