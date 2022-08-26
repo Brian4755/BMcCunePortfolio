@@ -1,6 +1,5 @@
 body {
   margin: 150px 10vw;
-  /* background-color: red; */
 }
 
 p {
@@ -24,8 +23,10 @@ p {
   list-style-type: none;
   padding: 0;
   margin-top: 100vh;
-  margin-left: 50vw;
-  transition: 3s;
+  margin-left: 37vw;
+  transition: 5s;
+  font-size: 5vh;
+  /* padding: 0px; */
 }
 
 .menuIcon {
@@ -51,24 +52,97 @@ p {
 }
 
 .navbarChange.navbarList {
-  background-color: red;
   margin-top: 0vh;
-  transition: 3s;
+  transition-duration: 2s;
+  transition-delay: 500ms;
 }
 
 #navbarBackground {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: fixed;
   width: 50vw;
   height: 100vh;
   right: 0px;
-  top: 100px;
   background-color: gray;
   z-index: -1;
   top: 100vh;
-  transition: 3s;
+  transition-duration: 1.5s;
+  transition-delay: 1.7s;
 }
 
 .navbarChange #navbarBackground {
   top: 0vh;
-  transition: 3s;
+  transition-duration: 1s;
+  transition-delay: 500ms;
+}
+
+li {
+  padding: 25px;
+  text-align: center;
+  font-weight: 800;
+}
+
+#home {
+  transform: rotate(40deg);
+  transition-duration: 600ms;
+  transition-delay: 750ms;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+#about {
+  transform: rotate(40deg);
+  transition-duration: 600ms;
+  transition-delay: 500ms;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+#work {
+  transform: rotate(40deg);
+  transition-duration: 600ms;
+  transition-delay: 250ms;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+#contact {
+  transform: rotate(40deg);
+  transition-duration: 600ms;
+  transition-delay: 150ms;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.navbarAnimation #home {
+  opacity: 1;
+  font-size: 50px;
+  transform: rotate(0deg);
+  transition-duration: 0ms;
+  transition-delay: -4s;
+  /* animation: homeChange 2s; */
+}
+
+.navbarAnimation #about {
+  opacity: 1;
+  font-size: 50px;
+  transform: rotate(0deg);
+  transition-duration: 0ms;
+  /* transition-delay: 4s; */
+}
+
+.navbarAnimation #work {
+  opacity: 1;
+  font-size: 50px;
+  transform: rotate(0deg);
+  transition-duration: 0ms;
+  /* transition-delay: 4s; */
+}
+
+.navbarAnimation #contact {
+  opacity: 1;
+  font-size: 50px;
+  transform: rotate(0deg);
+  transition-duration: 0ms;
+  /* transition-delay: 4s; */
 }

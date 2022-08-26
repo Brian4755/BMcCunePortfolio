@@ -5,6 +5,7 @@ menuIcon.addEventListener('click', function(e) {
   menuIcon.classList.toggle("change")
   console.log('this works')
   menuList.classList.toggle("navbarChange")
+  menuList.classList.toggle("navbarAnimation")
 })
 
 // const sectionOne = document.querySelector('.section1')
