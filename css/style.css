@@ -23,9 +23,9 @@ p {
   list-style-type: none;
   padding: 0;
   margin-top: 100vh;
-  margin-left: 37vw;
+  margin-left: 52vw;
   transition: 5s;
-  font-size: 5vh;
+  /* font-size: 2rem; */
   /* padding: 0px; */
 }
 
@@ -60,7 +60,7 @@ p {
 #navbarBackground {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: fixed;
-  width: 50vw;
+  width: 37vw;
   height: 100vh;
   right: 0px;
   background-color: gray;
@@ -80,6 +80,7 @@ li {
   padding: 25px;
   text-align: center;
   font-weight: 800;
+  font-size: 7vmin;
 }
 
 #home {
@@ -116,7 +117,7 @@ li {
 
 .navbarAnimation #home {
   opacity: 1;
-  font-size: 50px;
+  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
   transition-delay: -4s;
@@ -125,7 +126,7 @@ li {
 
 .navbarAnimation #about {
   opacity: 1;
-  font-size: 50px;
+  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
   /* transition-delay: 4s; */
@@ -133,7 +134,7 @@ li {
 
 .navbarAnimation #work {
   opacity: 1;
-  font-size: 50px;
+  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
   /* transition-delay: 4s; */
@@ -141,7 +142,7 @@ li {
 
 .navbarAnimation #contact {
   opacity: 1;
-  font-size: 50px;
+  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
   /* transition-delay: 4s; */
