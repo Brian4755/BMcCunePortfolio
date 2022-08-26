@@ -1,5 +1,7 @@
 body {
   margin: 150px 10vw;
+  background-color: rgb(214, 214, 214);
+  font-family: 'Roboto Slab'
 }
 
 p {
@@ -23,7 +25,7 @@ p {
   list-style-type: none;
   padding: 0;
   margin-top: 100vh;
-  margin-left: 52vw;
+  margin-left: 79vw;
   transition: 5s;
   /* font-size: 2rem; */
   /* padding: 0px; */
@@ -32,11 +34,14 @@ p {
 .menuIcon {
   display: inline-block;
   cursor: pointer;
-  margin-left: 75vw;
+  margin-left: 93vw;
+  margin-top: 10vh;
 }
 
 .navbar {
   position: fixed;
+  top: 0%;
+  left: 0%;
 }
 
 .change #line1 {
@@ -52,7 +57,7 @@ p {
 }
 
 .navbarChange.navbarList {
-  margin-top: 0vh;
+  margin-top: 5vh;
   transition-duration: 2s;
   transition-delay: 500ms;
 }
@@ -60,10 +65,10 @@ p {
 #navbarBackground {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: fixed;
-  width: 37vw;
+  width: 24vw;
   height: 100vh;
   right: 0px;
-  background-color: gray;
+  background-color: rgb(51, 51, 51);
   z-index: -1;
   top: 100vh;
   transition-duration: 1.5s;
@@ -81,6 +86,7 @@ li {
   text-align: center;
   font-weight: 800;
   font-size: 7vmin;
+  color: rgb(151, 141, 131)
 }
 
 #home {
@@ -146,4 +152,27 @@ li {
   transform: rotate(0deg);
   transition-duration: 0ms;
   /* transition-delay: 4s; */
+}
+
+#selfImage {
+  height: 50vh;
+  position: absolute;
+  left: 62vw;
+  top: 25vh;
+  z-index: -1;
+}
+
+.topBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48vh;
+  background-color: rgb(220, 247, 254);
+  z-index: -2;
+}
+
+.introTitle {
+  font-size: 3rem;
+  margin-left: 5vw;
 }
