@@ -21,7 +21,7 @@ p {
 .menuLine {
   width: 35px;
   height: 5px;
-  background-color: rgb(82, 33, 230);
+  background-color: rgb(225, 126, 12);
   margin: 6px 0;
   transition: 0.2s;
   border-radius: 2.5px;
@@ -48,6 +48,7 @@ p {
   position: fixed;
   top: 0%;
   left: 0%;
+  z-index: 2;
 }
 
 #line1, #line2, #line3 {
@@ -83,7 +84,7 @@ p {
 
 @keyframes colorRevert {
   0% {background-color:rgb(199, 201, 215); opacity: 1;}
-  100% {background-color: rgb(82, 33, 230);}
+  100% {background-color: rgb(225, 126, 12);}
 }
 
 .navbarChange.navbarList {
@@ -205,7 +206,7 @@ li {
 .introTitle {
   font-size: 3rem;
   margin: 0%;
-  margin-top: 12vh;
+  margin-top: 35vh;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -222,13 +223,25 @@ li {
   height: 60vh;
 }
 
-/* .section1Background {
-  height: 100vh;
-  background-color: rgb(7, 7, 7);
-  position: absolute;
-  width: 99vw;
-  top: -20vh;
-  left: 0;
-  z-index: -2;
-} */
+.section1Background {
+  /* height: 100vh; */
+  background-color: rgb(255, 243, 228);
+  margin: -10vw;
+  margin-top: -3.52vw;
+  height: 75vh;
+  position: relative;
+  background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/286450508_1256274371781363_2370626504998005271_n.jpg?stp=dst-jpg_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=mwCBCrl6FlcAX_VEFLg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVI-VzMDXri89d-QvAX6ItiAHyC3QSOLhVnY9pPlSm2W6g&oe=6332D6C1");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 61vh;
+}
 
+
+
+.city {
+  color:rgb(225, 126, 12);
+}
+
+.bioTitle {
+  font-size: 5rem;
+}
