@@ -101,13 +101,13 @@ p {
   background-color: rgb(24, 24, 35);
   z-index: -1;
   top: 100vh;
-  transition-duration: 1.2s;
+  transition-duration: 1550ms;
   transition-delay: 0.7s;
 }
 
 .navbarChange #navbarBackground {
   top: 0vh;
-  transition-duration: 1s;
+  transition-duration: 1050ms;
   transition-delay: 500ms;
 }
 
@@ -121,32 +121,32 @@ li {
 
 #home {
   transform: rotate(20deg);
-  transition-duration: 400ms;
-  transition-delay: 400ms;
+  transition-duration: 700ms;
+  transition-delay: 150ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
 
 #about {
   transform: rotate(20deg);
-  transition-duration: 400ms;
-  transition-delay: 300ms;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
 
 #work {
   transform: rotate(20deg);
-  transition-duration: 400ms;
-  transition-delay: 200ms;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
 
 #contact {
   transform: rotate(20deg);
-  transition-duration: 400ms;
-  transition-delay: 100ms;
+  transition-duration: 100ms;
+  transition-delay: 0ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
