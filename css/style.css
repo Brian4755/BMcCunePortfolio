@@ -201,6 +201,10 @@ li {
   height: 100vh;
   background-color: rgb(7, 7, 7);
   z-index: -2;
+  background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/300470524_482114090007992_4301045473110580642_n.jpg?stp=dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=STL7N_oBkj8AX-o5OMV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKMRhTKrTCF3CZO4TV88nOGbeDutLAk74S4MXtXkK8zCg&oe=632FD212');
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-size: 25%;
 }
 
 .introTitle {
@@ -227,13 +231,14 @@ li {
   /* height: 100vh; */
   background-color: rgb(255, 243, 228);
   margin: -10vw;
-  margin-top: -3.52vw;
-  height: 75vh;
+  margin-top: -15vw;
+  height: 105vh;
   position: relative;
   background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/286450508_1256274371781363_2370626504998005271_n.jpg?stp=dst-jpg_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=mwCBCrl6FlcAX_VEFLg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVI-VzMDXri89d-QvAX6ItiAHyC3QSOLhVnY9pPlSm2W6g&oe=6332D6C1");
-  background-position: right top;
+  background-position: 100% 90%;
   background-repeat: no-repeat;
-  background-size: 61vh;
+  background-size: auto 50%;
+  z-index: -3;
 }
 
 
