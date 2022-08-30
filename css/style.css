@@ -5,6 +5,11 @@ body {
   /* scrollbar-width: none; */
 }
 
+.preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+
 p {
   font-size: 5vw;
 }
@@ -46,7 +51,7 @@ p {
 }
 
 #line1, #line2, #line3 {
-  animation: colorRevert 2s;
+  animation: colorRevert 1s;
   animation-fill-mode: forwards;
   animation-timing-function: steps(1, end);
 }
@@ -96,8 +101,8 @@ p {
   background-color: rgb(24, 24, 35);
   z-index: -1;
   top: 100vh;
-  transition-duration: 1.5s;
-  transition-delay: 1.7s;
+  transition-duration: 1.2s;
+  transition-delay: 0.7s;
 }
 
 .navbarChange #navbarBackground {
@@ -115,33 +120,33 @@ li {
 }
 
 #home {
-  transform: rotate(40deg);
-  transition-duration: 600ms;
-  transition-delay: 750ms;
+  transform: rotate(20deg);
+  transition-duration: 400ms;
+  transition-delay: 400ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
 
 #about {
-  transform: rotate(40deg);
-  transition-duration: 600ms;
-  transition-delay: 500ms;
+  transform: rotate(20deg);
+  transition-duration: 400ms;
+  transition-delay: 300ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
 
 #work {
-  transform: rotate(40deg);
-  transition-duration: 600ms;
-  transition-delay: 250ms;
+  transform: rotate(20deg);
+  transition-duration: 400ms;
+  transition-delay: 200ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
 
 #contact {
-  transform: rotate(40deg);
-  transition-duration: 600ms;
-  transition-delay: 150ms;
+  transform: rotate(20deg);
+  transition-duration: 400ms;
+  transition-delay: 100ms;
   transition-timing-function: ease-in;
   opacity: 0;
 }
