@@ -351,4 +351,16 @@ div.card {
   left: 43%;
   top: 26%;
   background-color: rgb(199, 73, 73);
+  transform: rotate(28deg);
+  animation: rotate4 20s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
