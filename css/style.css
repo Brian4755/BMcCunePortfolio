@@ -35,22 +35,16 @@ p {
   margin-top: 100vh;
   margin-left: 79vw;
   transition: 5s;
-  /* font-size: 2rem; */
-  /* padding: 0px; */
 }
 
 .menuIcon {
-  display: inline-block;
   cursor: pointer;
   margin-left: 94vw;
   margin-top: 10vh;
-}
-
-.navbar {
   position: fixed;
+  right: 3%;
   top: 0%;
-  left: 0%;
-  /* z-index: 2; */
+  z-index: 10;
 }
 
 #line1, #line2, #line3 {
@@ -119,7 +113,8 @@ li {
   text-align: center;
   font-weight: 800;
   font-size: 7vmin;
-  color: rgb(199, 201, 215)
+  color: rgb(199, 201, 215);
+  position: absolute;
 }
 
 #home {
@@ -128,6 +123,9 @@ li {
   transition-delay: 150ms;
   transition-timing-function: ease-in;
   opacity: 0;
+  position: fixed;
+  left: 80%;
+  top: 40%;
 }
 
 #about {
@@ -136,6 +134,9 @@ li {
   transition-delay: 100ms;
   transition-timing-function: ease-in;
   opacity: 0;
+  position: fixed;
+  left: 80%;
+  top: 60%;
 }
 
 #work {
@@ -144,6 +145,9 @@ li {
   transition-delay: 50ms;
   transition-timing-function: ease-in;
   opacity: 0;
+  position: fixed;
+  left: 80%;
+  top: 80%;
 }
 
 #contact {
@@ -152,39 +156,40 @@ li {
   transition-delay: 0ms;
   transition-timing-function: ease-in;
   opacity: 0;
+  position: fixed;
+  left: 80%;
+  top: 100%;
 }
 
 .navbarAnimation #home {
   opacity: 1;
-  /* font-size: 50px; */
   transform: rotate(0deg);
-  transition-duration: 0ms;
-  transition-delay: -4s;
-  /* animation: homeChange 2s; */
+  top: 20%;
+  transition-duration: 1400ms;
 }
 
 .navbarAnimation #about {
   opacity: 1;
-  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
-  /* transition-delay: 4s; */
+  transition-duration: 1400ms;
+  top: 40%;
 }
 
 .navbarAnimation #work {
   opacity: 1;
-  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
-  /* transition-delay: 4s; */
+  transition-duration: 1400ms;
+  top: 60%;
 }
 
 .navbarAnimation #contact {
   opacity: 1;
-  /* font-size: 50px; */
   transform: rotate(0deg);
   transition-duration: 0ms;
-  /* transition-delay: 4s; */
+  transition-duration: 1400ms;
+  top: 80%;
 }
 
 #selfImage {
@@ -230,7 +235,6 @@ li {
 }
 
 .section1Background {
-  /* height: 100vh; */
   background-color: rgb(255, 243, 228);
   margin: -10vw;
   margin-top: -15vw;
@@ -238,10 +242,6 @@ li {
   position: absolute;
   top:100vh;
   width: 100vw;
-  /* background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/286450508_1256274371781363_2370626504998005271_n.jpg?stp=dst-jpg_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=5oWl3kUIyMUAX_Iyxgo&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLLXHFI2FM0WjUvBS8eZXIzS49jXbRhGsWDbuWkmEM3Eg&oe=635E5841");
-  background-position: 100% 80%;
-  background-repeat: no-repeat;
-  background-size: auto 50%; */
   z-index: -3;
 }
 
@@ -249,10 +249,10 @@ li {
   position: absolute;
   top: 130%;
   left: 80%;
+  z-index: -2;
 }
 
 .bioTitle {
-  /* margin-top: 25vw; */
   font-size: 500px;
 }
 
@@ -283,16 +283,12 @@ li {
 }
 
 .flex-container {
-  /* float: left; */
   margin: 0;
 }
 
 #card-container {
   color:blue;
-  /* flex: 1; */
   padding: 5px;
-  /* margin-right:  20px; */
-  /* margin: 0; */
 }
 
 p.card-text {
@@ -363,7 +359,6 @@ div.card {
   top: 75%;
   background-color: rgb(39, 165, 165);
   animation: rotate3 4s infinite;
-  /* animation-timing-function: linear; */
 }
 
 @keyframes rotate3 {
@@ -399,14 +394,6 @@ div.card {
   }
 }
 
-/* .name {
-  font-weight: 800;
-  position: fixed;
-  top: 10%;
-  left: 6.5%;
-  z-index: 10;
-} */
-
 .section1Square1 {
   background: linear-gradient(#88E6D1, #62E4C7);
   position: absolute;
@@ -433,9 +420,4 @@ div.card {
 
 .section1Square1:hover {
   background-color: black;
-}
-
-.shapeAnimation {
-  /* position: absolute;
-  background-color: black; */
 }
