@@ -333,6 +333,20 @@ div.card {
   left: 8%;
   top: 85%;
   background-color: rgb(196, 145, 36);
+  animation: rotate2 4s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .square3 {
@@ -342,6 +356,20 @@ div.card {
   left: 45%;
   top: 75%;
   background-color: rgb(39, 165, 165);
+  animation: rotate3 4s infinite;
+  /* animation-timing-function: linear; */
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: rotate(40deg);
+  }
+  80% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(220deg);
+  }
 }
 
 .square4 {
