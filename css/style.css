@@ -42,36 +42,37 @@ p {
   margin-left: 94vw;
   margin-top: 10vh;
   position: fixed;
-  right: 3%;
-  top: 0%;
+  right: 2.3%;
+  top: -3%;
   z-index: 10;
 }
 
 #line1, #line2, #line3 {
-  animation: colorRevert 1s;
+  animation: colorRevert 200ms;
   animation-fill-mode: forwards;
   animation-timing-function: steps(1, end);
 }
 
 .change #line1 {
   transform: rotate(-45deg) translate(-9px, 6px);
-  animation: colorChange 1s;
+  animation: colorChange 10ms;
   animation-fill-mode: forwards;
-  animation-delay: 0.9s
+  animation-delay: 550ms;
 }
+
 
 .change #line2 {
   opacity: 0;
-  animation: colorChange 1s;
+  animation: colorChange 10ms;
   animation-fill-mode: forwards;
-  animation-delay: 0.9s
+  animation-delay: 550ms
 }
 
 .change #line3 {
   transform: rotate(45deg) translate(-10px, -6px);
-  animation: colorChange 1s;
+  animation: colorChange 10ms;
   animation-fill-mode: forwards;
-  animation-delay: 0.9s
+  animation-delay: 550ms
 }
 
 @keyframes colorChange {
@@ -92,104 +93,109 @@ p {
 #navbarBackground {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: fixed;
-  width: 24vw;
-  height: 100vh;
+  width: 17vw;
+  height: 70vh;
   right: 0px;
-  background-color: rgb(24, 24, 35);
+  background-color: rgb(56, 52, 47);
   z-index: -1;
   top: 100vh;
-  transition-duration: 1550ms;
-  transition-delay: 0.7s;
+  transition-duration: 980ms;
+  transition-delay: 0.1s;
 }
+
+/* .change #navebarBackground {
+  background-color: teal;
+} */
 
 .navbarChange #navbarBackground {
   top: 0vh;
-  transition-duration: 1050ms;
-  transition-delay: 500ms;
+  transition-duration: 600ms;
+  transition-delay: 200ms;
 }
 
 li {
   padding: 25px;
   text-align: center;
   font-weight: 800;
-  font-size: 7vmin;
+  font-size: 4vmin;
   color: rgb(199, 201, 215);
   position: absolute;
 }
 
 #home {
   transform: rotate(20deg);
-  transition-duration: 700ms;
-  transition-delay: 150ms;
+  transition-duration: 100ms;
+  transition-delay: 80ms;
   transition-timing-function: ease-in;
   opacity: 0;
   position: fixed;
-  left: 80%;
-  top: 40%;
+  left: 87%;
+  top: 17%;
 }
 
 #about {
   transform: rotate(20deg);
-  transition-duration: 500ms;
-  transition-delay: 100ms;
+  transition-duration: 100ms;
+  transition-delay: 80ms;
   transition-timing-function: ease-in;
   opacity: 0;
   position: fixed;
-  left: 80%;
-  top: 60%;
+  left: 87%;
+  top: 27%;
 }
 
 #work {
   transform: rotate(20deg);
-  transition-duration: 300ms;
-  transition-delay: 50ms;
+  transition-duration: 100ms;
+  transition-delay: 80ms;
   transition-timing-function: ease-in;
   opacity: 0;
   position: fixed;
-  left: 80%;
-  top: 80%;
+  left: 87%;
+  top: 37%;
 }
 
 #contact {
   transform: rotate(20deg);
   transition-duration: 100ms;
-  transition-delay: 0ms;
+  transition-delay: 80ms;
   transition-timing-function: ease-in;
   opacity: 0;
   position: fixed;
-  left: 80%;
-  top: 100%;
+  left: 87%;
+  top: 47%;
 }
 
 .navbarAnimation #home {
   opacity: 1;
   transform: rotate(0deg);
-  top: 20%;
-  transition-duration: 1400ms;
+  top: 13%;
+  transition-delay: 280ms;
+  transition-duration: 700ms;
 }
 
 .navbarAnimation #about {
   opacity: 1;
   transform: rotate(0deg);
-  transition-duration: 0ms;
-  transition-duration: 1400ms;
-  top: 40%;
+  transition-delay: 280ms;
+  transition-duration: 700ms;
+  top: 23%;
 }
 
 .navbarAnimation #work {
   opacity: 1;
   transform: rotate(0deg);
-  transition-duration: 0ms;
-  transition-duration: 1400ms;
-  top: 60%;
+  transition-delay: 280ms;
+  transition-duration: 700ms;
+  top: 33%;
 }
 
 .navbarAnimation #contact {
   opacity: 1;
   transform: rotate(0deg);
-  transition-duration: 0ms;
-  transition-duration: 1400ms;
-  top: 80%;
+  transition-delay: 280ms;
+  transition-duration: 700ms;
+  top: 43%;
 }
 
 #selfImage {
@@ -219,6 +225,7 @@ li {
   margin: 0%;
   margin-top: 35vh;
   text-align: center;
+  opacity: 0%;
   color: rgb(255, 255, 255);
 }
 
@@ -303,13 +310,13 @@ div.card {
 
 
 .square1 {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   left: 25%;
   top: 15%;
   background-color: rgb(29, 180, 49);
-  animation: rotate1 9s infinite;
+  animation: rotate1 9s infinite !important;
   animation-timing-function: linear;
 }
 
@@ -329,13 +336,13 @@ div.card {
 }
 
 .square2 {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   left: 8%;
   top: 85%;
   background-color: rgb(196, 145, 36);
-  animation: rotate2 4s infinite;
+  animation: rotate2 3.3s infinite !important;
   animation-timing-function: linear;
 }
 
@@ -344,7 +351,7 @@ div.card {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-90deg);
+    transform: rotate(-120deg);
   }
   100% {
     transform: rotate(0deg);
@@ -352,20 +359,20 @@ div.card {
 }
 
 .square3 {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   left: 45%;
   top: 75%;
   background-color: rgb(39, 165, 165);
-  animation: rotate3 4s infinite;
+  animation: rotate3 2s infinite !important;
 }
 
 @keyframes rotate3 {
   0% {
     transform: rotate(40deg);
   }
-  80% {
+  40% {
     transform: rotate(40deg);
   }
   100% {
@@ -374,14 +381,14 @@ div.card {
 }
 
 .square4 {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   left: 43%;
   top: 26%;
   background-color: rgb(199, 73, 73);
   transform: rotate(28deg);
-  animation: rotate4 20s infinite;
+  animation: rotate4 4s infinite !important;
   animation-timing-function: linear;
 }
 
@@ -418,6 +425,23 @@ div.card {
   mix-blend-mode: hard-light;
 }
 
-.section1Square1:hover {
+/* .section1Square1:hover {
   background-color: black;
+} */
+
+
+.introTitle {
+  opacity: 0%;
+  animation: introOpacityChange 3s linear forwards !important;
+  text-align: left;
+  margin-left: 30%;
+}
+
+@keyframes introOpacityChange {
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
