@@ -10,12 +10,12 @@ menuIcon.addEventListener('click', function(e) {
 })
 
 // const sectionOne = document.querySelector('.section1')
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('.section')
 
 const options = {
   root: null, //it is the viewport
-  threshhold: 0,
-  rootMargin: "0px"
+  threshhold: 1,
+  rootMargin: "0px 0px -430px 0px"
 }
 
 const observer = new IntersectionObserver(function(entries, observer) {
