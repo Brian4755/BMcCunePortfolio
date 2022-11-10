@@ -2,7 +2,6 @@ body {
   margin: 150px 10vw;
   background-color: rgb(214, 214, 214);
   font-family: 'Roboto Slab';
-  /* scrollbar-width: none; */
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -103,10 +102,6 @@ p {
   transition-duration: 980ms;
   transition-delay: 0.1s;
 }
-
-/* .change #navebarBackground {
-  background-color: teal;
-} */
 
 .navbarChange #navbarBackground {
   top: 0vh;
@@ -780,7 +775,7 @@ div.card {
     background-position: 90% 55%;
   }
   #home, #about, #work, #contact {
-    left: 85%;
+    left: 81%;
   }
   .selfimage2 {
     top: 140%;
@@ -802,4 +797,19 @@ div.card {
     top: 40%;
     left: 8%;
   }
+  #navbarBackground {
+    width: 25vw;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  .menuIcon {
+    left: -2%;
+    margin-right: auto;
+  }
+  #navbarBackground {
+    left: 100%;
+  }
+
+}
+
