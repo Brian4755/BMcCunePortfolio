@@ -9,7 +9,6 @@ menuIcon.addEventListener('click', function(e) {
   menuList.classList.toggle("navbarAnimation")
 })
 
-// const sectionOne = document.querySelector('.section1')
 const sections = document.querySelectorAll('.section')
 
 const options = {
@@ -59,5 +58,55 @@ const projectMaterial = projectData.map(project => {
   return html
 }).join('')
 
+function textFlow() {
+  let textAnimation = 'I am a junior software engineer with the desire to work with others and continuously learn through challenges'
+  for (let i = 0; i < textAnimation.length; i++) {
+    setTimeout(() => {
+      setTimeout(() => { document.getElementById("displayDiv").innerHTML += textAnimation[i]}, 40*i)
+    }, 2000)
+  }
+}
+
+const element = document.getElementById('notesContainer')
+const notesHeader = document.getElementById('notesHeader')
+const notesDots = document.getElementById('notesDots')
+const notesLine1 = document.getElementById('notesLine1')
+const notesLine2 = document.getElementById('notesLine2')
+const displayDiv = document.getElementById('displayDiv')
+const spanBefore = document.getElementById('spanBefore')
+var styleElem = document.head.appendChild(document.createElement("style"));
+// const spanAfter = document.getElementById('spanAfter')
+
+let scrolled = true
+
+$(window).scroll(function () {
+  if($(window).scrollTop() > 400 && scrolled === true) {
+    element.classList.add("notesContainer")
+    notesHeader.classList.add("notesHeader")
+    notesDots.classList.add("notesDots")
+    notesLine1.classList.add("notesLine1")
+    notesLine2.classList.add("notesLine2")
+    displayDiv.classList.add("displayDiv")
+    
+    setTimeout(() => {
+      console.log("Delayed for 1 second.");
+      spanBefore.classList.add("spanBefore")
+      // spanAfter.classList.add("spanAfter")
+
+
+      styleElem.innerHTML = "#displayDiv::after {  content: '|';}";
+
+
+    }, 1100)
+
+    textFlow()
+    console.log('hi')
+    scrolled = false
+    }
+  }
+  // else {
+    //   element.removeClass("")
+    // }
+  )
 
 cardContainer.innerHTML = projectMaterial
