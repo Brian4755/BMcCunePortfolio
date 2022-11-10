@@ -802,7 +802,7 @@ div.card {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .menuIcon {
     left: -8%;
     margin-right: auto;
