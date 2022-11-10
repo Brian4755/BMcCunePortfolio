@@ -802,14 +802,80 @@ div.card {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .menuIcon {
-    left: -2%;
+    left: -8%;
     margin-right: auto;
   }
   #navbarBackground {
-    left: 100%;
+    width: 100%;
+    z-index: 3;
+    height: 100%;
   }
-
+  #home, #about, #work, #contact {
+    left: 27%;
+    margin-left: 0;
+    padding: 0;
+    font-size: 3.5rem;
+  }
+  .navbarAnimation #home {
+    top: 18%
+  }
+  .navbarAnimation #about {
+    top: 38%
+  }
+  .navbarAnimation #work {
+    top: 58%
+  }
+  .navbarAnimation #contact {
+    top: 78%
+  }
+  #home {
+    top: 40%;
+  }
+  #about {
+    top: 60%;
+  }
+  #work {
+    top: 80%;
+  }
+  #contact {
+    top: 100%;
+  }
+  .introTitle {
+    font-size: 2.5rem;
+    width: 140%;
+  }
+  .topBackground {
+    background-size: 80%;
+    background-position: 50% 80%;
+  }
+  .square1 {
+    top: 49%;
+    left: 16%;
+    /* background-color: red; */
+  }
+  @keyframes rotate1 {
+    0% {
+      transform: rotate(0deg);
+      top: 49%;
+    }
+    50% {
+      transform: rotate(315deg);
+      top: 51%;
+    }
+    100% {
+      transform: rotate(630deg);
+      top: 49%;
+    }
+  }
+  .square3 {
+    left: 80%;
+    top: 90%;
+  }
+  .square4 {
+    top: 49%;
+    left: 78%;
+  }
 }
 
