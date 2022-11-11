@@ -257,8 +257,14 @@ li {
   height: auto;
 }
 
-.city {
+/* .city {
   color:rgb(225, 126, 12);
+} */
+
+.introTitle2::after {
+  content: 'Austin Texas';
+  display: block;
+  color: rgb(225, 126, 12);
 }
 
 .bioTitle {
