@@ -892,9 +892,13 @@ div.card {
     font-size: 2.5rem;
     width: 140%;
   }
+  .introTitleContainer {
+    top: 0%;
+  }
+
   .topBackground {
-    background-size: 80%;
-    background-position: 50% 80%;
+    background-size: 60%;
+    background-position: 50% 86%;
   }
   .square1 {
     top: 49%;
@@ -924,14 +928,11 @@ div.card {
   }
   .phoneImageContainer {
     position: absolute;
-    left: 10%;
-    top: 14%;
+    left: 30%;
+    top: -17%;
   }
   .selfimage2 {
-    left: 11%;
-    top: 155%;
-    width: 300px;
-    height: auto;
+  display: none;
   }
   .section1Square1 {
     top: 50%;
@@ -942,3 +943,20 @@ div.card {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .introTitle {
+    color: white;
+  }
+  .phoneImageContainer {
+    position: absolute;
+    left: 10%;
+    top: 14%;
+  }
+  .selfimage2 {
+    display: inline;
+    left: 11%;
+    top: 155%;
+    width: 300px;
+    height: auto;
+  }
+}
