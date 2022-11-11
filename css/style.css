@@ -3,7 +3,7 @@ body {
   background-color: rgb(214, 214, 214);
   font-family: 'Roboto Slab';
   overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .preload * {
@@ -31,10 +31,8 @@ p {
 .navbarList {
   list-style-type: none;
   padding: 0;
-  margin-top: 100vh;
   margin-left: 79vw;
   transition: 5s;
-  /* text-align: center; */
 }
 
 .menuIcon {
@@ -246,7 +244,7 @@ li {
   height: 135vh;
   position: absolute;
   top:100vh;
-  width: 100vw;
+  width: 100%;
   z-index: -3;
 }
 
@@ -456,10 +454,8 @@ div.card {
 .section1 {
   position: relative;
   height: 450px;
-  width: 30rem;
-  /* border: black 2px solid; */
+  width: 100%;
   margin-left: -6%;
-  border-radius: 10%;
 }
 
 /* Phone CSS Below */
@@ -470,8 +466,8 @@ div.card {
   width: 320px;
   background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-iphone-xs-home-assistive-touch.png");
   background-size: cover;
-  margin-left: 25%;
-  margin-top: -10%;
+  margin-left: -5%;
+  margin-top: -5%;
 }
 
 #notesContainer {
@@ -741,15 +737,28 @@ div.card {
 
 
 
+@media screen and (max-width: 1500px) {
+  .phoneImageContainer {
+    /* margin-top: -70%; */
+  }
+}
+@media screen and (max-width: 1400px) {
+  .phoneImageContainer {
+    /* margin-top: -75%; */
+  }
+}
 
 @media screen and (max-width: 1300px) {
+
+
   .introTitle {
     color: red;
     margin-left: 15%;
   }
 
   .phoneImageContainer {
-    margin-left: 7%;
+    /* margin-left: 7%; */
+    /* margin-top: -78%; */
   }
   .educationalBackground {
     font-size: 1.5rem;
@@ -768,7 +777,7 @@ div.card {
     margin-top: 43%;
   }
   .phoneImageContainer {
-    margin-left: 4%;
+    /* margin-left: 4%; */
   }
   .topBackground {
     background-size: 32%;
@@ -808,39 +817,39 @@ div.card {
     margin-right: auto;
   }
   #navbarBackground {
-    width: 100%;
+    width: 75%;
     z-index: 3;
-    height: 100%;
+    height: 85%;
   }
   #home, #about, #work, #contact {
-    left: 27%;
+    left: 45%;
     margin-left: 0;
     padding: 0;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .navbarAnimation #home {
     top: 18%
   }
   .navbarAnimation #about {
-    top: 38%
+    top: 32%
   }
   .navbarAnimation #work {
-    top: 58%
+    top: 46%
   }
   .navbarAnimation #contact {
-    top: 78%
+    top: 60%
   }
   #home {
     top: 40%;
   }
   #about {
-    top: 60%;
+    top: 50%;
   }
   #work {
-    top: 80%;
+    top: 60%;
   }
   #contact {
-    top: 100%;
+    top: 70%;
   }
   .introTitle {
     font-size: 2.5rem;
@@ -876,6 +885,19 @@ div.card {
   .square4 {
     top: 49%;
     left: 78%;
+  }
+  .phoneImageContainer {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+  }
+  .selfimage2 {
+    left: 13%;
+    top: 182%;
+    width: 300px;
+    height: auto;
+  }
+  .section1 {
   }
 }
 
