@@ -69,7 +69,7 @@ function textFlow() {
 
 const element = document.getElementById('notesContainer')
 const notesHeader = document.getElementById('notesHeader')
-const notesDots = document.getElementById('notesDots')
+// const notesDots = document.getElementById('notesDots')
 const notesLine1 = document.getElementById('notesLine1')
 const notesLine2 = document.getElementById('notesLine2')
 const displayDiv = document.getElementById('displayDiv')
@@ -83,7 +83,7 @@ $(window).scroll(function () {
   if($(window).scrollTop() > 400 && scrolled === true) {
     element.classList.add("notesContainer")
     notesHeader.classList.add("notesHeader")
-    notesDots.classList.add("notesDots")
+    // notesDots.classList.add("notesDots")
     notesLine1.classList.add("notesLine1")
     notesLine2.classList.add("notesLine2")
     displayDiv.classList.add("displayDiv")
