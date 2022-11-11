@@ -959,4 +959,28 @@ div.card {
     width: 300px;
     height: auto;
   }
+  .square1 {
+    top: 52%;
+  }
+  @keyframes rotate1 {
+    0% {
+      transform: rotate(0deg);
+      top: 52%;
+    }
+    50% {
+      transform: rotate(315deg);
+      top: 55%;
+    }
+    100% {
+      transform: rotate(630deg);
+      top: 52%;
+    }
+  }
+  .square4 {
+    top: 54%;
+  }
+  .topBackground {
+    background-size: 70%;
+    background-position: 50% 81%;
+  }
 }
