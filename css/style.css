@@ -997,7 +997,7 @@ div.card {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
   .introTitle {
     color: yellow;
   }
