@@ -16,7 +16,7 @@ p {
 }
 
 .section1, .section2 {
-  margin-bottom: 500px;
+  /* margin-bottom: 500px; */
 }
 
 .menuLine {
@@ -255,7 +255,7 @@ li {
 .selfimage2 {
   position: absolute;
   left: 110%;
-  top: 10%;
+  top: 12%;
   z-index: -2;
   width: 24vw;
   height: auto;
@@ -290,7 +290,7 @@ li {
 
 .section2Text {
   text-align: center;
-  margin-top: -20%;
+  /* margin-top: -20%; */
   font-size: 1.5rem;
 }
 
@@ -310,7 +310,7 @@ p.card-text {
 div.card {
   margin-left: 20px;
   float: left;
-  margin-top: -30%;
+  /* margin-top: -30%; */
 }
 
 
@@ -460,9 +460,10 @@ div.card {
 }
 
 .section {
+  position: relative;
   opacity: 0;
   transition: opacity 250ms ease-in;
-  margin-top: 500px;
+  margin-top: 1500px;
 }
 
 .section.appear {
@@ -486,7 +487,7 @@ div.card {
   background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-iphone-xs-home-assistive-touch.png");
   background-size: cover;
   margin-left: -5%;
-  margin-top: -5%;
+  margin-top: 0%;
 }
 
 #notesContainer {
@@ -728,7 +729,17 @@ div.card {
   color: cornflowerblue;
   font-weight: 700;
 }
-
+.section2 {
+  background-color: cornflowerblue;
+  position: absolute;
+  /* margin-top: 3000px; */
+  height: 1000px;
+  width: 100%;
+  left: 0%;
+  top: 700px;
+  z-index: -1;
+  /* margin-left: 0%; */
+}
 
 
 /* .phoneImageContainer {
