@@ -2,7 +2,7 @@ body {
   margin: 150px 10vw;
   background-color: rgb(214, 214, 214);
   font-family: 'Roboto Slab';
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* overflow-x: hidden; */
 }
 
@@ -206,7 +206,8 @@ li {
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 730px;
   background-color: rgb(7, 7, 7);
   z-index: -2;
   background-image: url('../assets/selfimage.jpg');
@@ -218,7 +219,8 @@ li {
 .introTitle {
   font-size: 3rem;
   margin: 0%;
-  margin-top: 35vh;
+  /* margin-top: 35vh; */
+  margin-top: 28%;
   text-align: center;
   opacity: 0%;
   color: rgb(255, 255, 255);
@@ -239,10 +241,11 @@ li {
 .section1Background {
   background-color: rgb(255, 243, 228);
   margin: -10vw;
-  margin-top: -15vw;
-  height: 141vh;
+  margin-top: -150px;
+  /* height: 141vh; */
+  height: 900px;
   position: absolute;
-  top:100vh;
+  /* top:100vh; */
   width: 100%;
   z-index: -3;
   overflow: hidden;
@@ -315,7 +318,8 @@ div.card {
   width: 25px;
   position: absolute;
   left: 18%;
-  top: 15%;
+  /* top: 15%; */
+  top: 150px;
   background-color: rgb(29, 180, 49);
   animation: rotate1 9s infinite !important;
   animation-timing-function: linear;
@@ -324,15 +328,15 @@ div.card {
 @keyframes rotate1 {
   0% {
     transform: rotate(0deg);
-    top: 15%;
+    top: 150px;
   }
   50% {
     transform: rotate(315deg);
-    top: 18%;
+    top: 160px;
   }
   100% {
     transform: rotate(630deg);
-    top: 15%;
+    top: 150px;
   }
 }
 
@@ -341,10 +345,12 @@ div.card {
   width: 25px;
   position: absolute;
   left: 8%;
-  top: 85%;
+  /* top: 85%; */
+  top: 600px;
   background-color: rgb(196, 145, 36);
   animation: rotate2 3.3s infinite !important;
   animation-timing-function: linear;
+  /* margin-top: 35vh; */
 }
 
 @keyframes rotate2 {
@@ -364,7 +370,8 @@ div.card {
   width: 25px;
   position: absolute;
   left: 45%;
-  top: 75%;
+  /* top: 75%; */
+  top: 537px;
   background-color: rgb(39, 165, 165);
   animation: rotate3 2s infinite !important;
 }
@@ -386,7 +393,8 @@ div.card {
   width: 25px;
   position: absolute;
   left: 43%;
-  top: 26%;
+  /* top: 26%; */
+  top: 186px;
   background-color: rgb(199, 73, 73);
   transform: rotate(28deg);
   animation: rotate4 4s infinite !important;
@@ -409,7 +417,8 @@ div.card {
   width: 700px;
   left: 30%;
   z-index: -3;
-  top: -25%;
+  /* top: -25%; */
+  margin-top: -200px;
   transform: rotate(42deg);
   mix-blend-mode: hard-light;
   overflow: hidden;
@@ -422,7 +431,8 @@ div.card {
   width: 700px;
   left: 10%;
   z-index: -3;
-  top: -20%;
+  /* top: -20%; */
+  margin-top: -100px;
   transform: rotate(42deg);
   mix-blend-mode: hard-light;
 }
@@ -468,7 +478,8 @@ div.card {
 /* Phone CSS Below */
 
 .phoneImageContainer {
-  position: absolute;
+  /* position: absolute; */
+  position: sticky;
   height: 642px;
   width: 320px;
   background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-iphone-xs-home-assistive-touch.png");
@@ -755,6 +766,7 @@ div.card {
   .introTitle {
     color: red;
     margin-left: 15%;
+    margin-top: 35%;
   }
 
   .educationalBackground {
@@ -794,23 +806,6 @@ div.card {
   }
   #navbarBackground {
     width: 25vw;
-  }
-  .square1 {
-    top: 22%;
-  }
-  @keyframes rotate1 {
-    0% {
-      transform: rotate(0deg);
-      top: 22%;
-    }
-    50% {
-      transform: rotate(315deg);
-      top: 25%;
-    }
-    100% {
-      transform: rotate(630deg);
-      top: 22%;
-    }
   }
 }
 
@@ -900,35 +895,44 @@ div.card {
     background-position: 50% 86%;
   }
   .square1 {
-    top: 49%;
+    /* top: 49%; */
+    top: 350px;
     left: 16%;
   }
   @keyframes rotate1 {
     0% {
       transform: rotate(0deg);
-      top: 49%;
+      top: 350px;
     }
     50% {
       transform: rotate(315deg);
-      top: 51%;
+      /* top: 51%; */
+      top: 360px;
     }
     100% {
       transform: rotate(630deg);
-      top: 49%;
+      /* top: 49%; */
+      top: 350px;
     }
+  }
+  .square2 {
+    left: 16%;
+    top: 645px
   }
   .square3 {
     left: 80%;
-    top: 90%;
+    /* top: 90%; */
+    top: 640px;
   }
   .square4 {
-    top: 49%;
     left: 78%;
+    /* top: 49%; */
+    top: 360px;
   }
   .phoneImageContainer {
     position: absolute;
     left: 30%;
-    top: -17%;
+    /* top: -17%; */
   }
   .selfimage2 {
   display: none;
@@ -945,9 +949,6 @@ div.card {
 @media screen and (max-width: 450px) {
   .introTitle {
     color: white;
-  }
-  .section1Background {
-    height: 151vh;
   }
   .phoneImageContainer {
     position: absolute;
