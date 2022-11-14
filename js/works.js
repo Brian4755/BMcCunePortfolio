@@ -2,7 +2,7 @@ let projectData = [
   {
     title: 'Tic Tac Toe',
     deployment: 'https://tictactoe-brian4755.netlify.app/',
-    image: 'https://scontent.xx.fbcdn.net/v/t1.15752-9/309620621_518068556331643_7820254715798910924_n.png?stp=dst-png_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=hLqZD8Fy-NAAX_79Yuj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIVI03l-vPEsTikaacUe5UNOxSiH7Ze6BejaKIxJdEK7w&oe=636A4761',
+    image: 'https://scontent.xx.fbcdn.net/v/t1.15752-9/309620621_518068556331643_7820254715798910924_n.png?stp=dst-png_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=kk4a1KtB9QkAX_jgbY0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSJeTK6PGYR6VxgcpYAhzpXtviYJqaiXJY9vqCVA-oYjw&oe=63994CE1',
     gitHub: 'https://github.com/Brian4755/ttt-weekend',
     description: 'Tic Tac Toe game using JS, HTML, and CSS'
   },
