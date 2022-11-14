@@ -736,7 +736,8 @@ div.card {
   background-color: cornflowerblue;
   position: absolute;
   /* margin-top: 3000px; */
-  height: 1000px;
+  height: auto;
+  min-height: 1000px;
   width: 100%;
   left: 0%;
   top: 750px;
