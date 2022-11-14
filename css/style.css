@@ -966,6 +966,42 @@ div.card {
     height: auto;
   }
   .square1 {
+    top: 45%;
+  }
+  @keyframes rotate1 {
+    0% {
+      transform: rotate(0deg);
+      top: 45%;
+    }
+    50% {
+      transform: rotate(315deg);
+      top: 47%;
+    }
+    100% {
+      transform: rotate(630deg);
+      top: 45%;
+    }
+  }
+  .square4 {
+    top: 46%;
+  }
+  .topBackground {
+    background-size: 70%;
+    background-position: 50% 81%;
+  }
+  .square3 {
+    top: 74%;
+  }
+  .square2 {
+    top: 77%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .introTitle {
+    color: yellow;
+  }
+  .square1 {
     top: 39%;
   }
   @keyframes rotate1 {
@@ -985,20 +1021,10 @@ div.card {
   .square4 {
     top: 39%;
   }
-  .topBackground {
-    background-size: 70%;
-    background-position: 50% 81%;
-  }
   .square3 {
     top: 68%;
   }
   .square2 {
     top: 71%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .introTitle {
-    color: yellow;
   }
 }
