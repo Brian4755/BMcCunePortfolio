@@ -487,7 +487,7 @@ div.card {
   position: sticky;
   height: 642px;
   width: 320px;
-  background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-iphone-xs-home-assistive-touch.png");
+  background-image: url("/assets/IPhone.png");
   background-size: cover;
   margin-left: -5%;
   margin-top: 0%;
@@ -587,14 +587,14 @@ div.card {
     left: 6.6%;
     top: 2.9%;
     border-radius: 11% 11% / 4.5% 4.5%;
-    background-image: url('https://scontent-dfw5-2.xx.fbcdn.net/v/t1.15752-9/315112601_1247462535814423_6105024555963015869_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=i5eQPgBG8UkAX9537R9&tn=U-feQepWnVvDH3DX&_nc_ht=scontent-dfw5-2.xx&oh=03_AdQQS7R5_ucr2_Jk1WxgQg5OnQoO-YAlWtHY_B5ACyr3eg&oe=63931C6F');
+    background-image: url('/assets/IPhoneScreen.jpg');
     background-size: cover;
   }
 }
 
 @keyframes notesBackgroundAnimation {
   0% {
-    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/314707435_900397777610053_8543042057526869902_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e2-4YxlxuwAAX-PLGCF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRd4GEQXUPUYY67k4bhg_Eld7JfAQVUbCcUg2KFKtMUlA&oe=63930DDC');
+    background-image: url('/assets/IPhoneTime.jpg');
     background-position: top right;
   }
   50% {
@@ -606,7 +606,7 @@ div.card {
     box-shadow: none;
   }
   100% {
-    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/314649789_1103071313731273_302609315010806170_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=cmaPLf4HKOcAX_J982a&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQPBSkLr3RVfC5xEsX7k2gmvyymRTXqjzfhjx4tBrhNcA&oe=63932039'), url('https://scontent.xx.fbcdn.net/v/t1.15752-9/314707435_900397777610053_8543042057526869902_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e2-4YxlxuwAAX-PLGCF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRd4GEQXUPUYY67k4bhg_Eld7JfAQVUbCcUg2KFKtMUlA&oe=63930DDC');
+    background-image: url('/assets/IPhoneBattery.jpg'), url('/assets/IPhoneTime.jpg');
     background-position: top right, top left;
     background-size: 50%, 26%;
     background-repeat: no-repeat, no-repeat;
@@ -811,10 +811,10 @@ div.card {
     left: 84%;
     height: 55vh;
     width: auto;
-    top: 40%;
+    top: 56%;
   }
   .educationalBackground {
-    top: 2%;
+    top: 12%;
     left: 27%;
     width: 27rem;
     /* margin-right: auto; */
@@ -847,10 +847,14 @@ div.card {
   .introTitle {
     color: #2479B2;
   }
+  .selfimage2 {
+    left: 85%;
+  }
   .educationalBackground {
     width: 15rem;
     left: 43%;
     font-size: 1.2rem;
+    top: 10%;
   }
 }
 
