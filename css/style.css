@@ -977,12 +977,12 @@ div.card {
   .phoneImageContainer {
     position: absolute;
     left: 11%;
-    top: 28%;
+    top: 8%;
   }
   .selfimage2 {
     display: inline;
     left: 11%;
-    top: 174%;
+    top: 163%;
     width: 300px;
     height: auto;
   }
