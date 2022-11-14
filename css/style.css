@@ -949,6 +949,7 @@ div.card {
 @media screen and (max-width: 500px) {
   .introTitle {
     color: white;
+    margin-top: 38%;
   }
   .section1Background{
     height: 1300px;
@@ -966,34 +967,38 @@ div.card {
     height: auto;
   }
   .square1 {
-    top: 46%;
+    /* top: 46%; */
+    top: 327px;
   }
   @keyframes rotate1 {
     0% {
       transform: rotate(0deg);
-      top: 46%;
+      top: 327px;
     }
     50% {
       transform: rotate(315deg);
-      top: 47%;
+      top: 329px;
     }
     100% {
       transform: rotate(630deg);
-      top: 46%;
+      top: 327px;
     }
   }
   .square4 {
-    top: 47%;
+    /* top: 47%; */
+    top: 318px;
   }
   .topBackground {
     background-size: 70%;
     background-position: 50% 81%;
   }
   .square3 {
-    top: 83%;
+    /* top: 83%; */
+    top: 621px;
   }
   .square2 {
-    top: 86%;
+    /* top: 86%; */
+    top: 641px;
   }
 }
 
@@ -1002,29 +1007,36 @@ div.card {
     color: yellow;
   }
   .square1 {
-    top: 39%;
+    /* top: 39%; */
+    top: 277px;
   }
   @keyframes rotate1 {
     0% {
       transform: rotate(0deg);
-      top: 39%;
+      /* top: 39%; */
+      top: 277px;
     }
     50% {
       transform: rotate(315deg);
-      top: 41%;
+      /* top: 41%; */
+      top: 279px;
     }
     100% {
       transform: rotate(630deg);
-      top: 39%;
+      /* top: 39%; */
+      top: 277px;
     }
   }
   .square4 {
-    top: 39%;
+    /* top: 39%; */
+    top: 277px;
   }
   .square3 {
-    top: 68%;
+    /* top: 68%; */
+    top: 483px;
   }
   .square2 {
-    top: 71%;
+    /* top: 71%; */
+    top: 505px;
   }
 }
