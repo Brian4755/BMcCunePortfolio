@@ -737,7 +737,7 @@ div.card {
   width: 100%;
   left: 0%;
   top: 750px;
-  z-index: -1;
+  /* z-index: -1; */
   /* margin-left: 0%; */
 }
 
@@ -1011,6 +1011,9 @@ div.card {
   .square2 {
     /* top: 86%; */
     top: 641px;
+  }
+  .section2 {
+    margin-top: 1200px;
   }
 }
 
