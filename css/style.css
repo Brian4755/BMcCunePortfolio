@@ -966,34 +966,34 @@ div.card {
     height: auto;
   }
   .square1 {
-    top: 45%;
+    top: 48%;
   }
   @keyframes rotate1 {
     0% {
       transform: rotate(0deg);
-      top: 45%;
+      top: 48%;
     }
     50% {
       transform: rotate(315deg);
-      top: 47%;
+      top: 49%;
     }
     100% {
       transform: rotate(630deg);
-      top: 45%;
+      top: 48%;
     }
   }
   .square4 {
-    top: 46%;
+    top: 47%;
   }
   .topBackground {
     background-size: 70%;
     background-position: 50% 81%;
   }
   .square3 {
-    top: 74%;
+    top: 78%;
   }
   .square2 {
-    top: 77%;
+    top: 81%;
   }
 }
 
