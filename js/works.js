@@ -12,6 +12,13 @@ let projectData = [
     image: '../assets/TFT.png',
     gitHub: 'https://github.com/Brian4755/TFTCheatSheet',
     description: 'Forum/guide for a game called TeamFight Tactics. Used technologies such as EJS mongoDB/mongoose and JavaScript'
+  },
+  {
+    title: 'Fitness Bros',
+    deployment: 'https://fitness-bro.netlify.app/',
+    image: '../assets/Fitness.png',
+    gitHub: 'https://github.com/Brian4755/fitness-bro-front-end',
+    description: 'Full stack MERN application that allows users to track meals and workouts using two APIs. Consists of React.js, Mongoose and MongoDB'
   }
 ]
 

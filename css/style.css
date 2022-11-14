@@ -99,7 +99,7 @@ p {
   height: 70vh;
   right: 0px;
   background-color: rgb(56, 52, 47);
-  z-index: -1;
+  z-index: 2;
   top: 100vh;
   transition-duration: 980ms;
   transition-delay: 0.1s;
@@ -740,7 +740,7 @@ div.card {
   width: 100%;
   left: 0%;
   top: 750px;
-  z-index: -2;
+  z-index: 1;
   /* margin-left: 0%; */
 }
 
