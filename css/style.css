@@ -951,7 +951,7 @@ div.card {
     color: white;
   }
   .section1Background{
-    height: 1400px;
+    height: 1300px;
   }
   .phoneImageContainer {
     position: absolute;
@@ -994,5 +994,11 @@ div.card {
   }
   .square2 {
     top: 71%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .introTitle {
+    color: yellow;
   }
 }
