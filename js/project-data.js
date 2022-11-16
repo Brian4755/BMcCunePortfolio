@@ -117,78 +117,18 @@ $(window).scroll(function () {
   const nodejsIcon = document.getElementById('nodejsIcon')
 
   function htmlAnimation() {
-    for (let i = 0; i <= 5350; i=i+0.5) {
+    for (let i = 0; i <= 53500; i=i+0.5) {
       setTimeout(() => {
-        htmlIcon.style.left = i*0.02 - 7 + '%'
-        if (htmlIcon.style.left === '11.5%') {
-          jsAnimation()
-        }
-        if (htmlIcon.style.left === '30%') {
-          cssAnimation()
-        }
-        if (htmlIcon.style.left === '48.5%') {
-          reactAnimation()
-        }
-        if (htmlIcon.style.left === '67%') {
-          pythonAnimation()
-        }
-        if (htmlIcon.style.left === '85.5%') {
-          nodejsAnimation()
-        }
-        if (htmlIcon.style.left === '100%') {
-          console.log('100%')
-          htmlIcon.style.left = '-7%'
-          return htmlAnimation()
-        }
-      }, 3*i)
-    }
-  }
-
-  function jsAnimation() {
-    for (let i = 0; i <= 5350; i=i+0.5) {
-      setTimeout(() => {
-        jsIcon.style.left = i*0.02 - 25.5 + '%'
-      }, 3*i)
-    }
-  }
-
-  function cssAnimation() {
-    for (let i = 0; i <= 5350; i=i+0.5) {
-      setTimeout(() => {
-        cssIcon.style.left = i*0.02 - 44 + '%'
-      }, 3*i)
-    }
-  }
-
-  function reactAnimation() {
-    for (let i = 0; i <= 5350; i=i+0.5) {
-      setTimeout(() => {
-        reactIcon.style.left = i*0.02 - 62.5 + '%'
-      }, 3*i)
-    }
-  }
-
-  function pythonAnimation() {
-    for (let i = 0; i <= 5350; i=i+0.5) {
-      setTimeout(() => {
-        pythonIcon.style.left = i*0.02 - 81 + '%'
-      }, 3*i)
-    }
-  }
-  function nodejsAnimation() {
-    for (let i = 0; i <= 5350; i=i+0.5) {
-      setTimeout(() => {
-        nodejsIcon.style.left = i*0.02 - 99.5 + '%'
+        htmlIcon.style.left = ((i % 5350)*0.02 - 7) + '%'
+        jsIcon.style.left = (((i - 891) % 5350)*0.02 - 25.5) + '%'
+        cssIcon.style.left = (((i - 1782) % 5350)*0.02 - 44) + '%'
+        reactIcon.style.left = (((i - 2673) % 5350)*0.02 - 62.5) + '%'
+        pythonIcon.style.left = (((i - 3564) % 5350)*0.02 - 81) + '%'
+        nodejsIcon.style.left = (((i - 4455) % 5350)*0.02 - 99.5) + '%'
       }, 3*i)
     }
   }
 
 
-
-  // nodejsAnimation()
-  // pythonAnimation()
-  // reactAnimation()
-  // cssAnimation()
-  // jsAnimation()
   htmlAnimation()
 cardContainer.innerHTML = projectMaterial
