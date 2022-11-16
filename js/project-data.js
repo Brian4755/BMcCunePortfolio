@@ -117,14 +117,18 @@ $(window).scroll(function () {
   const nodejsIcon = document.getElementById('nodejsIcon')
 
   function iconAnimation() {
-    for (let i = 0; i < 999999999999; i=i+0.5) {
+    for (let i = 0; i <= 53500; i=i+0.5) {
       setTimeout(() => {
+        console.log(i)
         htmlIcon.style.left = ((i % 5350)*0.02 - 7) + '%'
         jsIcon.style.left = (((i - 891) % 5350)*0.02 - 25.5) + '%'
         cssIcon.style.left = (((i - 1782) % 5350)*0.02 - 44) + '%'
         reactIcon.style.left = (((i - 2673) % 5350)*0.02 - 62.5) + '%'
         pythonIcon.style.left = (((i - 3564) % 5350)*0.02 - 81) + '%'
         nodejsIcon.style.left = (((i - 4455) % 5350)*0.02 - 99.5) + '%'
+        if (i === 53500){
+          return iconAnimation()
+        }
       }, 3*i)
     }
   }
