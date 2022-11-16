@@ -751,6 +751,34 @@ div.card {
 } */
 
 
+.icons {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+#htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon{
+  width: 18%;
+  position: relative;
+}
+
+/* #htmlIcon {
+  left:-7%;
+} */
+
+#jsIcon {
+  left: -50%;
+}
+
+/* #cssIcon {
+  left: -37%;
+} */
+
+/* i {
+  font-size: 10vw;
+} */
+
+
 
 
 
@@ -856,6 +884,9 @@ div.card {
     left: 43%;
     font-size: 1.2rem;
     top: 10%;
+  }
+  #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
+    font-size: 3em;
   }
 }
 
@@ -1024,6 +1055,9 @@ div.card {
   .section2 {
     margin-top: 1200px;
   }
+  #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1065,25 +1099,3 @@ div.card {
   }
 }
 
-.icons {
-  overflow: hidden;
-  position: relative;
-  white-space: nowrap;
-}
-
-#htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon{
-  width: 18%;
-  position: relative;
-}
-
-/* #htmlIcon {
-  left:-7%;
-} */
-
-#jsIcon {
-  left: -50%;
-}
-
-/* #cssIcon {
-  left: -37%;
-} */
