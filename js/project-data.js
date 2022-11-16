@@ -117,7 +117,7 @@ $(window).scroll(function () {
   const nodejsIcon = document.getElementById('nodejsIcon')
 
   function iconAnimation() {
-    for (let i = 0; i <= 53500; i=i+0.5) {
+    for (let i = 0; i <= 535000; i=i+0.5) {
       setTimeout(() => {
         htmlIcon.style.left = ((i % 5350)*0.02 - 7) + '%'
         jsIcon.style.left = (((i - 891) % 5350)*0.02 - 25.5) + '%'
