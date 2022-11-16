@@ -111,22 +111,108 @@ $(window).scroll(function () {
 
   const htmlIcon = document.getElementById('htmlIcon')
   const jsIcon = document.getElementById('jsIcon')
+  const cssIcon = document.getElementById('cssIcon')
+  const reactIcon = document.getElementById('reactIcon')
+  const pythonIcon = document.getElementById('pythonIcon')
+  const nodejsIcon = document.getElementById('nodejsIcon')
 
-  function iconAnimation() {
+  function htmlAnimation() {
     // const icons = [htmlIcon, jsIcon]
-    htmlIcon.style.left = '0%'
     // jsIcon.style.left = '100%'
-    for (let i = 0; i <= 500; i=i+0.5) {
+    for (let i = 0; i <= 5350; i=i+0.5) {
       setTimeout(() => {
-        htmlIcon.style.left = i*0.2 + '%'
+        htmlIcon.style.left = i*0.02 - 7 + '%'
         // jsIcon.style.left = i*0.2 + '%'
+        // console.log(htmlIcon.style.left)
+        if (htmlIcon.style.left === '11.5%') {
+          jsAnimation()
+        }
+
         if (htmlIcon.style.left === '100%') {
           console.log('100%')
-          return iconAnimation()
+          htmlIcon.style.left = '-7%'
+          return htmlAnimation()
+        }
+      }, 3*i)
+    }
+  }
+
+  function jsAnimation() {
+    for (let i = 0; i <= 5350; i=i+0.5) {
+      setTimeout(() => {
+        jsIcon.style.left = i*0.02 - 25.5 + '%'
+      }, 3*i)
+    }
+  }
+
+  function cssAnimation() {
+    // const icons = [htmlIcon, jsIcon]
+    cssIcon.style.left = '-18%'
+    // jsIcon.style.left = '100%'
+    for (let i = 0; i <= 590; i=i+0.5) {
+      setTimeout(() => {
+        cssIcon.style.left = i*0.2 - 18 + '%'
+        // jsIcon.style.left = i*0.2 + '%'
+        if (cssIcon.style.left === '100%') {
+          console.log('100%')
+          return cssAnimation()
         }
       }, 30*i)
     }
   }
 
-  iconAnimation()
+  function reactAnimation() {
+    // const icons = [htmlIcon, jsIcon]
+    reactIcon.style.left = '-18%'
+    // jsIcon.style.left = '100%'
+    for (let i = 0; i <= 590; i=i+0.5) {
+      setTimeout(() => {
+        reactIcon.style.left = i*0.2 - 18 + '%'
+        // jsIcon.style.left = i*0.2 + '%'
+        if (reactIcon.style.left === '100%') {
+          console.log('100%')
+          return reactAnimation()
+        }
+      }, 30*i)
+    }
+  }
+
+  function pythonAnimation() {
+    // const icons = [htmlIcon, jsIcon]
+    pythonIcon.style.left = '-18%'
+    // jsIcon.style.left = '100%'
+    for (let i = 0; i <= 590; i=i+0.5) {
+      setTimeout(() => {
+        pythonIcon.style.left = i*0.2 - 18 + '%'
+        // jsIcon.style.left = i*0.2 + '%'
+        if (pythonIcon.style.left === '100%') {
+          console.log('100%')
+          return pythonAnimation()
+        }
+      }, 30*i)
+    }
+  }
+
+  function nodejsAnimation() {
+    // const icons = [htmlIcon, jsIcon]
+    nodejsIcon.style.left = '-108%'
+    // jsIcon.style.left = '100%'
+    for (let i = 0; i <= 590; i=i+0.5) {
+      setTimeout(() => {
+        nodejsIcon.style.left = i*0.2 + '%'
+        // jsIcon.style.left = i*0.2 + '%'
+        if (nodejsIcon.style.left === '18%') {
+          console.log('100%')
+          return nodejsAnimation()
+        }
+      }, 30*i)
+    }
+  }
+
+  // nodejsAnimation()
+  // pythonAnimation()
+  // reactAnimation()
+  // cssAnimation()
+  // jsAnimation()
+  htmlAnimation()
 cardContainer.innerHTML = projectMaterial

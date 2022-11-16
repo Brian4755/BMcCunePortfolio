@@ -1071,17 +1071,19 @@ div.card {
   white-space: nowrap;
 }
 
-#htmlIcon {
-  position: relative;
-  /* left: 0%; */
-  /* overflow: hidden; */
-}
-
-#jsIcon {
-  position: relative;
-  /* left: 50%; */
-}
-
 #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon{
   width: 18%;
+  position: relative;
 }
+
+/* #htmlIcon {
+  left:-7%;
+} */
+
+#jsIcon {
+  left: -50%;
+}
+
+/* #cssIcon {
+  left: -37%;
+} */
