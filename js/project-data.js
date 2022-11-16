@@ -109,4 +109,24 @@ $(window).scroll(function () {
     // }
   )
 
+  const htmlIcon = document.getElementById('htmlIcon')
+  const jsIcon = document.getElementById('jsIcon')
+
+  function iconAnimation() {
+    // const icons = [htmlIcon, jsIcon]
+    htmlIcon.style.left = '0%'
+    // jsIcon.style.left = '100%'
+    for (let i = 0; i <= 500; i=i+0.5) {
+      setTimeout(() => {
+        htmlIcon.style.left = i*0.2 + '%'
+        // jsIcon.style.left = i*0.2 + '%'
+        if (htmlIcon.style.left === '100%') {
+          console.log('100%')
+          return iconAnimation()
+        }
+      }, 30*i)
+    }
+  }
+
+  iconAnimation()
 cardContainer.innerHTML = projectMaterial

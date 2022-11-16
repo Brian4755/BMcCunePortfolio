@@ -1064,3 +1064,24 @@ div.card {
     top: 624px;
   }
 }
+
+.icons {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+#htmlIcon {
+  position: relative;
+  /* left: 0%; */
+  /* overflow: hidden; */
+}
+
+#jsIcon {
+  position: relative;
+  /* left: 50%; */
+}
+
+#htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon{
+  width: 18%;
+}
