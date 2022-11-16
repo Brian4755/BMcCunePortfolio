@@ -116,7 +116,7 @@ $(window).scroll(function () {
   const pythonIcon = document.getElementById('pythonIcon')
   const nodejsIcon = document.getElementById('nodejsIcon')
 
-  function htmlAnimation() {
+  function iconAnimation() {
     for (let i = 0; i <= 53500; i=i+0.5) {
       setTimeout(() => {
         htmlIcon.style.left = ((i % 5350)*0.02 - 7) + '%'
@@ -130,5 +130,5 @@ $(window).scroll(function () {
   }
 
 
-  htmlAnimation()
+  iconAnimation()
 cardContainer.innerHTML = projectMaterial
