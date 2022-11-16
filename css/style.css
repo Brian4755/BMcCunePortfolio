@@ -766,8 +766,8 @@ div.card {
   left:-7%;
 } */
 
-#jsIcon {
-  left: -50%;
+#jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
+  left: -150%;
 }
 
 /* #cssIcon {
