@@ -18,7 +18,7 @@ let projectData = [
     deployment: 'https://fitness-bro.netlify.app/',
     image: '../assets/Fitness.png',
     gitHub: 'https://github.com/Brian4755/fitness-bro-front-end',
-    description: 'Full stack MERN application that allows users to track meals and workouts using two APIs. Consists of React.js, Mongoose and MongoDB'
+    description: 'Worked under a small group to create a Full stack MERN application that allows users to track meals and workouts using two APIs. Consists of React.js, Mongoose and MongoDB'
   }
 ]
 

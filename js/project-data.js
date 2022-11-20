@@ -29,7 +29,6 @@ const observer = new IntersectionObserver(function(entries, observer) {
   })
 }, options)
 
-// observer.observe(sectionOne)
 
 sections.forEach(section => {
   observer.observe(section)
@@ -69,13 +68,11 @@ function textFlow() {
 
 const element = document.getElementById('notesContainer')
 const notesHeader = document.getElementById('notesHeader')
-// const notesDots = document.getElementById('notesDots')
 const notesLine1 = document.getElementById('notesLine1')
 const notesLine2 = document.getElementById('notesLine2')
 const displayDiv = document.getElementById('displayDiv')
 const spanBefore = document.getElementById('spanBefore')
 var styleElem = document.head.appendChild(document.createElement("style"));
-// const spanAfter = document.getElementById('spanAfter')
 
 let scrolled = true
 
@@ -83,7 +80,6 @@ $(window).scroll(function () {
   if($(window).scrollTop() > 400 && scrolled === true) {
     element.classList.add("notesContainer")
     notesHeader.classList.add("notesHeader")
-    // notesDots.classList.add("notesDots")
     notesLine1.classList.add("notesLine1")
     notesLine2.classList.add("notesLine2")
     displayDiv.classList.add("displayDiv")
@@ -104,9 +100,6 @@ $(window).scroll(function () {
     scrolled = false
     }
   }
-  // else {
-    //   element.removeClass("")
-    // }
   )
 
   const htmlIcon = document.getElementById('htmlIcon')
@@ -119,7 +112,6 @@ $(window).scroll(function () {
   function iconAnimation() {
     for (let i = 0; i <= 53500; i=i+0.5) {
       setTimeout(() => {
-        console.log(i)
         htmlIcon.style.left = ((i % 5350)*0.02 - 7) + '%'
         jsIcon.style.left = (((i - 891) % 5350)*0.02 - 25.5) + '%'
         cssIcon.style.left = (((i - 1782) % 5350)*0.02 - 44) + '%'

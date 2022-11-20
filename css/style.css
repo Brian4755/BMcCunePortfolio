@@ -227,7 +227,8 @@ li {
   margin-top: 28%;
   text-align: center;
   opacity: 0%;
-  color: rgb(255, 255, 255);
+  color: white;
+  /* color: linear-gradient(to right, white, rgb(173,175,180)) */
 }
 
 .section1, .section2, .section3 {
@@ -448,6 +449,11 @@ div.card {
   margin-left: 20%;
 }
 
+.introTitle2 {
+  opacity: 0%;
+  animation: introOpacityChange 3.3s linear forwards !important;
+}
+
 @keyframes introOpacityChange {
   30% {
     opacity: 0%;
@@ -457,10 +463,6 @@ div.card {
   }
 }
 
-.introTitle2 {
-  opacity: 0%;
-  animation: introOpacityChange 3.3s linear forwards !important;
-}
 
 .section {
   position: relative;
@@ -746,10 +748,6 @@ div.card {
 }
 
 
-/* .phoneImageContainer {
-  transform: rotate(45deg);
-} */
-
 
 .icons {
   overflow: hidden;
@@ -762,25 +760,9 @@ div.card {
   position: relative;
 }
 
-/* #htmlIcon {
-  left:-7%;
-} */
-
 #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
   left: -150%;
 }
-
-/* #jsIcon {
-  left: 80%;
-} */
-
-/* #cssIcon {
-  left: -37%;
-} */
-
-/* i {
-  font-size: 10vw;
-} */
 
 
 
