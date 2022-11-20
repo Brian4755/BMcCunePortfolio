@@ -273,6 +273,7 @@ li {
   content: 'Austin Texas';
   display: block;
   color: rgb(225, 126, 12);
+  animation: introOpacityChange 3.5s linear forwards
 }
 
 .bioTitle {
