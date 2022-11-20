@@ -269,13 +269,6 @@ li {
   color:rgb(225, 126, 12);
 } */
 
-.introTitle2::after {
-  content: 'Austin Texas';
-  display: block;
-  color: rgb(225, 126, 12);
-  animation: introOpacityChange 3.5s linear forwards
-}
-
 .bioTitle {
   font-size: 3rem;
   padding: 8%;
@@ -453,6 +446,13 @@ div.card {
 .introTitle2 {
   opacity: 0%;
   animation: introOpacityChange 3.3s linear forwards !important;
+}
+
+.introTitle2::after {
+  content: 'Austin Texas';
+  display: block;
+  color: rgb(225, 126, 12);
+  animation: introOpacityChange 3.5s linear forwards
 }
 
 @keyframes introOpacityChange {
