@@ -15,10 +15,6 @@ p {
   font-size: 5vw;
 }
 
-.section1, .section2 {
-  /* margin-bottom: 500px; */
-}
-
 .menuLine {
   width: 35px;
   height: 5px;
@@ -227,8 +223,14 @@ li {
   margin-top: 28%;
   text-align: center;
   opacity: 0%;
-  color: white;
-  /* color: linear-gradient(to right, white, rgb(173,175,180)) */
+  /* color: white; */
+}
+
+.introTitle, .introTitle2 {
+  background-image: linear-gradient(90deg, white, rgb(173,175,180));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .section1, .section2, .section3 {
@@ -288,8 +290,14 @@ li {
 
 .section2Text {
   text-align: center;
-  /* margin-top: -20%; */
-  font-size: 1.5rem;
+  margin-top: 5%;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.section2Text.appear {
+  opacity: 1;
 }
 
 .flex-container {
@@ -465,14 +473,14 @@ div.card {
 }
 
 
-.section {
+.section3 {
   position: relative;
   opacity: 0;
   transition: opacity 250ms ease-in;
   margin-top: 1500px;
 }
 
-.section.appear {
+.section3.appear {
   opacity: 1;
 }
 
@@ -727,6 +735,12 @@ div.card {
   color: rgb(26, 24, 23);
   font-size: 1.7rem;
   z-index: -2;
+  transition: opacity 300ms ease-in;
+  opacity: 0;
+}
+
+.educationalBackground.appear {
+  opacity: 1;
 }
 
 .educationalBackground::before {
@@ -736,7 +750,7 @@ div.card {
   font-weight: 700;
 }
 .section2 {
-  background-color: cornflowerblue;
+  background-color: white;
   position: absolute;
   /* margin-top: 3000px; */
   height: auto;

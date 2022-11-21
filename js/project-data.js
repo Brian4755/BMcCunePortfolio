@@ -9,12 +9,14 @@ menuIcon.addEventListener('click', function(e) {
   menuList.classList.toggle("navbarAnimation")
 })
 
-const sections = document.querySelectorAll('.section')
+const section3 = document.querySelectorAll('.section3')
+const educationalBackground = document.querySelectorAll('.educationalBackground')
+const section2Text = document.querySelectorAll('.section2Text')
 
 const options = {
   root: null, //it is the viewport
   threshhold: 1,
-  rootMargin: "0px 0px -430px 0px"
+  rootMargin: "0px 0px -140px 0px"
 }
 
 const observer = new IntersectionObserver(function(entries, observer) {
@@ -24,13 +26,20 @@ const observer = new IntersectionObserver(function(entries, observer) {
     } else {
       entry.target.classList.add('appear');
       observer.unobserve(entry.target);
+      console.log('here')
     }
     console.log(entry.target)
   })
 }, options)
 
 
-sections.forEach(section => {
+section3.forEach(section => {
+  observer.observe(section)
+})
+educationalBackground.forEach(section => {
+  observer.observe(section)
+})
+section2Text.forEach(section => {
   observer.observe(section)
 })
 
