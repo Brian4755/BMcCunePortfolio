@@ -516,10 +516,8 @@ div.card {
 
 .section3 {
   position: relative;
-  /* opacity: 0; */
   transition: opacity 250ms ease-in;
   margin-top: 0px;
-  /* min-height: 600px; */
   z-index: 1;
   background-color: black;
   left: 0;
@@ -528,7 +526,6 @@ div.card {
   min-height: 200px;
 }
 .section3Text {
-  /* text-align: center; */
   opacity: 0;
   transition: opacity 300ms ease-in;
 }
