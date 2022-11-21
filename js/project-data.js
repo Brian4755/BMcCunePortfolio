@@ -6,6 +6,11 @@ const home = document.getElementById('home')
 const about = document.getElementById('about')
 const work = document.getElementById('work')
 const contact = document.getElementById('contact')
+// const github = document.getElementById('github')
+
+// github.addEventListener('click', function(e) {
+
+// })
 
 menuIcon.addEventListener('click', function(e) {
   menuIcon.classList.toggle("change")
@@ -30,9 +35,11 @@ work.addEventListener('click', function(e) {
 })
 contact.addEventListener('click', function(e) {
   window.scrollTo(0, document.body.scrollHeight + 100);
-  // console.log('clicked')
-  // element.scrollTop = element.scrollHeight
 })
+
+// contact.addEventListener('mouseover', function(e) {
+//   contact.style.color = 'blue'
+// })
 
 const section2Text = document.querySelectorAll('.section2Text')
 const section3 = document.querySelectorAll('.section3')

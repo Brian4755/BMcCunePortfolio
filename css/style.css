@@ -204,6 +204,29 @@ li {
   z-index: -1;
 }
 
+
+@keyframes hoverAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.home:hover {
+  animation: 200ms hoverAnimation forwards;
+}
+.about:hover {
+  animation: 200ms hoverAnimation forwards;
+}
+.work:hover {
+  animation: 200ms hoverAnimation forwards;
+}
+.contact:hover {
+  animation: 200ms hoverAnimation forwards;
+}
+
 .topBackground {
   position: absolute;
   top: 0;
@@ -827,6 +850,10 @@ p {
   /* margin-bottom: 25px; */
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 
 
 
