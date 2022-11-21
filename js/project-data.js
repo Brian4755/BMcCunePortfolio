@@ -2,6 +2,10 @@ import { projectData } from "./works.js"
 const menuIcon = document.querySelector(".menuIcon")
 const menuList = document.querySelector(".navbarList")
 const cardContainer = document.getElementById('card-container')
+const home = document.getElementById('home')
+const about = document.getElementById('about')
+const work = document.getElementById('work')
+const contact = document.getElementById('contact')
 
 menuIcon.addEventListener('click', function(e) {
   menuIcon.classList.toggle("change")
@@ -9,9 +13,30 @@ menuIcon.addEventListener('click', function(e) {
   menuList.classList.toggle("navbarAnimation")
 })
 
+home.addEventListener('click', function(e) {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  console.log('clicked')
+})
+about.addEventListener('click', function(e) {
+  document.body.scrollTop = 740;
+  document.documentElement.scrollTop = 740;
+  console.log('clicked')
+})
+work.addEventListener('click', function(e) {
+  document.body.scrollTop = 1550;
+  document.documentElement.scrollTop = 1550;
+  console.log('clicked')
+})
+contact.addEventListener('click', function(e) {
+  window.scrollTo(0, document.body.scrollHeight + 100);
+  // console.log('clicked')
+  // element.scrollTop = element.scrollHeight
+})
+
+const section2Text = document.querySelectorAll('.section2Text')
 const section3 = document.querySelectorAll('.section3')
 const educationalBackground = document.querySelectorAll('.educationalBackground')
-const section2Text = document.querySelectorAll('.section2Text')
 const selfimage2 = document.querySelectorAll('.selfimage2')
 const projectContainer = document.querySelectorAll('.flex-container')
 const iPhone = document.querySelectorAll('.phoneImageContainer')

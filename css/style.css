@@ -115,6 +115,7 @@ li {
   font-size: 4vmin;
   color: rgb(199, 201, 215);
   /* position: absolute; */
+  cursor:pointer;
 }
 
 #home {
