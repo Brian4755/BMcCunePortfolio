@@ -94,7 +94,7 @@ p {
   width: 17vw;
   height: 70vh;
   right: 0px;
-  background-color: rgb(56, 52, 47);
+  background-color: rgb(24, 23, 23);
   z-index: 2;
   top: 100vh;
   transition-duration: 980ms;
@@ -195,6 +195,7 @@ li {
 
 #selfImage {
   height: 50vh;
+  /* height: 2rem; */
   position: absolute;
   left: 62vw;
   top: 25vh;
@@ -265,6 +266,21 @@ li {
   z-index: -2;
   width: 24vw;
   height: auto;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.selfimage2.appear {
+  opacity: 1;
+}
+
+.flex-container {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.flex-container.appear {
+  opacity: 1;
 }
 
 /* .city {
@@ -290,7 +306,7 @@ li {
 
 .section2Text {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
   font-size: 2rem;
   opacity: 0;
   transition: opacity 300ms ease-in;
@@ -446,21 +462,21 @@ div.card {
 
 .introTitle {
   opacity: 0%;
-  animation: introOpacityChange 1.5s linear forwards !important;
+  animation: introOpacityChange 1s linear forwards !important;
   text-align: left;
   margin-left: 20%;
 }
 
 .introTitle2 {
   opacity: 0%;
-  animation: introOpacityChange 3.3s linear forwards !important;
+  animation: introOpacityChange 2s linear forwards !important;
 }
 
 .introTitle2::after {
   content: 'Austin Texas';
   display: block;
   color: rgb(225, 126, 12);
-  animation: introOpacityChange 3.5s linear forwards
+  animation: introOpacityChange 0.2s linear forwards
 }
 
 @keyframes introOpacityChange {
@@ -474,10 +490,20 @@ div.card {
 
 
 .section3 {
-  position: relative;
-  opacity: 0;
+  position: absolute;
+  /* opacity: 0; */
   transition: opacity 250ms ease-in;
-  margin-top: 1500px;
+  margin-top: 1300px;
+  min-height: 600px;
+  z-index: 1;
+  background-color: black;
+  left: 0;
+  right: 0;
+  color: white;
+}
+.section3Text {
+  margin-left: 25px;
+  margin-top: 30px;
 }
 
 .section3.appear {
@@ -502,6 +528,12 @@ div.card {
   background-size: cover;
   margin-left: -5%;
   margin-top: 0%;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.phoneImageContainer.appear {
+  opacity: 1;
 }
 
 #notesContainer {
@@ -750,8 +782,8 @@ div.card {
   font-weight: 700;
 }
 .section2 {
-  background-color: white;
   position: absolute;
+  background-color: white;
   /* margin-top: 3000px; */
   height: auto;
   min-height: 1000px;
@@ -839,7 +871,7 @@ div.card {
   }
   .selfimage2 {
     left: 84%;
-    height: 55vh;
+    height: 22rem;
     width: auto;
     top: 56%;
   }
@@ -888,6 +920,12 @@ div.card {
   }
   #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
     font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .section3 {
+    margin-top: 1700px;
   }
 }
 

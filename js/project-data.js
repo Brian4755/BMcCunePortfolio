@@ -12,6 +12,9 @@ menuIcon.addEventListener('click', function(e) {
 const section3 = document.querySelectorAll('.section3')
 const educationalBackground = document.querySelectorAll('.educationalBackground')
 const section2Text = document.querySelectorAll('.section2Text')
+const selfimage2 = document.querySelectorAll('.selfimage2')
+const projectContainer = document.querySelectorAll('.flex-container')
+const iPhone = document.querySelectorAll('.phoneImageContainer')
 
 const options = {
   root: null, //it is the viewport
@@ -40,6 +43,16 @@ educationalBackground.forEach(section => {
   observer.observe(section)
 })
 section2Text.forEach(section => {
+  observer.observe(section)
+})
+selfimage2.forEach(section => {
+  observer.observe(section)
+  console.log('this')
+})
+projectContainer.forEach(section => {
+  observer.observe(section)
+})
+iPhone.forEach(section => {
   observer.observe(section)
 })
 
