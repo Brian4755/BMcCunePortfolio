@@ -960,11 +960,14 @@ a {
   #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
     font-size: 3em;
   }
+  .section3Text {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 705px) {
-  .section3 {
-    margin-top: 1700px;
+  .section2 {
+    height: 1400px;
   }
 }
 
@@ -1131,7 +1134,8 @@ a {
     top: 641px;
   }
   .section2 {
-    margin-top: 1200px;
+    margin-top: 700px;
+    /* height: 150%; */
   }
   #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
     font-size: 2em;
