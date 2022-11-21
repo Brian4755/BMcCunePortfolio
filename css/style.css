@@ -528,12 +528,12 @@ div.card {
   min-height: 200px;
 }
 .section3Text {
-  text-align: center;
-  /* margin-left: 25px; */
-  /* margin-top: 30px; */
+  /* text-align: center; */
+  opacity: 0;
+  transition: opacity 300ms ease-in;
 }
 
-.section3.appear {
+.section3Text.appear {
   opacity: 1;
 }
 

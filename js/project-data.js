@@ -6,11 +6,6 @@ const home = document.getElementById('home')
 const about = document.getElementById('about')
 const work = document.getElementById('work')
 const contact = document.getElementById('contact')
-// const github = document.getElementById('github')
-
-// github.addEventListener('click', function(e) {
-
-// })
 
 menuIcon.addEventListener('click', function(e) {
   menuIcon.classList.toggle("change")
@@ -37,12 +32,8 @@ contact.addEventListener('click', function(e) {
   window.scrollTo(0, document.body.scrollHeight + 100);
 })
 
-// contact.addEventListener('mouseover', function(e) {
-//   contact.style.color = 'blue'
-// })
-
 const section2Text = document.querySelectorAll('.section2Text')
-const section3 = document.querySelectorAll('.section3')
+const section3Text = document.querySelectorAll('.section3Text')
 const educationalBackground = document.querySelectorAll('.educationalBackground')
 const selfimage2 = document.querySelectorAll('.selfimage2')
 const projectContainer = document.querySelectorAll('.flex-container')
@@ -68,9 +59,10 @@ const observer = new IntersectionObserver(function(entries, observer) {
 }, options)
 
 
-section3.forEach(section => {
+section3Text.forEach(section => {
   observer.observe(section)
 })
+
 educationalBackground.forEach(section => {
   observer.observe(section)
 })
