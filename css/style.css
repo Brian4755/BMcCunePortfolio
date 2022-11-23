@@ -119,6 +119,7 @@ li {
   position: fixed;
   left: 87%;
   top: 17%;
+  visibility: hidden;
 }
 
 #about {
@@ -130,6 +131,7 @@ li {
   position: fixed;
   left: 87%;
   top: 27%;
+  visibility: hidden;
 }
 
 #work {
@@ -141,6 +143,7 @@ li {
   position: fixed;
   left: 87%;
   top: 37%;
+  visibility: hidden;
 }
 
 #contact {
@@ -152,6 +155,7 @@ li {
   position: fixed;
   left: 87%;
   top: 47%;
+  visibility: hidden;
 }
 
 .navbarAnimation #home {
@@ -160,6 +164,7 @@ li {
   top: 13%;
   transition-delay: 280ms;
   transition-duration: 700ms;
+  visibility: visible;
 }
 
 .navbarAnimation #about {
@@ -168,6 +173,7 @@ li {
   transition-delay: 280ms;
   transition-duration: 700ms;
   top: 23%;
+  visibility: visible;
 }
 
 .navbarAnimation #work {
@@ -176,6 +182,7 @@ li {
   transition-delay: 280ms;
   transition-duration: 700ms;
   top: 33%;
+  visibility: visible;
 }
 
 .navbarAnimation #contact {
@@ -184,6 +191,7 @@ li {
   transition-delay: 280ms;
   transition-duration: 700ms;
   top: 43%;
+  visibility: visible;
 }
 
 #selfImage {
@@ -260,7 +268,7 @@ li {
 
 .section1Background {
   background-color: rgb(255, 243, 228);
-  margin-top: -150px;
+  margin-top: -70px;
   height: 900px;
   position: absolute;
   width: 100%;

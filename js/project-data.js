@@ -6,6 +6,8 @@ const home = document.getElementById('home')
 const about = document.getElementById('about')
 const work = document.getElementById('work')
 const contact = document.getElementById('contact')
+const section3 = document.querySelector('.icons')
+const section1 = document.querySelector('.section1Background')
 
 menuIcon.addEventListener('click', function(e) {
   menuIcon.classList.toggle("change")
@@ -13,19 +15,20 @@ menuIcon.addEventListener('click', function(e) {
   menuList.classList.toggle("navbarAnimation")
 })
 
-home.addEventListener('click', function(e) {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  console.log('clicked')
-})
+console.log(home.style.opacity)
+
+  home.addEventListener('click', function(e) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    console.log('clicked')
+  })
+
 about.addEventListener('click', function(e) {
-  document.body.scrollTop = 740;
-  document.documentElement.scrollTop = 740;
+  section1.scrollIntoView()
   console.log('clicked')
 })
 work.addEventListener('click', function(e) {
-  document.body.scrollTop = 1550;
-  document.documentElement.scrollTop = 1550;
+  section3.scrollIntoView()
   console.log('clicked')
 })
 contact.addEventListener('click', function(e) {
