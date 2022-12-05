@@ -294,6 +294,7 @@ li {
 .flex-container {
   opacity: 0;
   transition: opacity 300ms ease-in;
+  display: flex;
 }
 
 .flex-container.appear {
@@ -336,6 +337,7 @@ li {
 #card-container {
   color:blue;
   padding: 5px;
+  /* width: 50%; */
 }
 
 p.card-text {
@@ -909,11 +911,16 @@ a {
   .section3Text {
     text-align: left;
   }
+  .section2 {
+    /* background-color: teal; */
+    height: 1800px;
+  }
 }
 
 @media screen and (max-width: 705px) {
   .section2 {
-    height: 1400px;
+    /* background-color: teal; */
+    height: 1800px;
   }
 }
 
@@ -1013,6 +1020,10 @@ a {
   .educationalBackground {
     display: none;
   }
+  .section2 {
+    /* background-color: teal; */
+    height: 1800px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1070,6 +1081,10 @@ a {
   }
   #htmlIcon, #jsIcon, #cssIcon, #reactIcon, #pythonIcon, #nodejsIcon {
     font-size: 2em;
+  }
+  .section2 {
+    /* background-color: teal; */
+    height: 1800px;
   }
 }
 

@@ -19,6 +19,13 @@ let projectData = [
     image: '../assets/Fitness.png',
     gitHub: 'https://github.com/Brian4755/fitness-bro-front-end',
     description: 'Worked under a small group to create a Full stack MERN application that allows users to track meals and workouts using two APIs. Consists of React.js, Mongoose and MongoDB'
+  },
+  {
+    title: 'ShowPro',
+    deployment: 'https://brian-showpro.herokuapp.com/',
+    image: '../assets/ShowPro.png',
+    gitHub: 'https://github.com/Brian4755/ShowPro',
+    description: 'ShowPro is a site used to find Movie/Show recommendations. Composed of Python, Django, CSS, and HTML'
   }
 ]
 
