@@ -15,21 +15,17 @@ menuIcon.addEventListener('click', function(e) {
   menuList.classList.toggle("navbarAnimation")
 })
 
-console.log(home.style.opacity)
 
   home.addEventListener('click', function(e) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    console.log('clicked')
   })
 
 about.addEventListener('click', function(e) {
   section1.scrollIntoView()
-  console.log('clicked')
 })
 work.addEventListener('click', function(e) {
   section3.scrollIntoView()
-  console.log('clicked')
 })
 contact.addEventListener('click', function(e) {
   window.scrollTo(0, document.body.scrollHeight + 100);
@@ -55,9 +51,7 @@ const observer = new IntersectionObserver(function(entries, observer) {
     } else {
       entry.target.classList.add('appear');
       observer.unobserve(entry.target);
-      console.log('here')
     }
-    console.log(entry.target)
   })
 }, options)
 
@@ -74,7 +68,6 @@ section2Text.forEach(section => {
 })
 selfimage2.forEach(section => {
   observer.observe(section)
-  console.log('this')
 })
 projectContainer.forEach(section => {
   observer.observe(section)
@@ -84,7 +77,6 @@ iPhone.forEach(section => {
 })
 
 setTimeout(function(){
-  console.log('page is fully loaded');
   const element = document.querySelector(".preload");
   element.classList.remove("preload");
 }, 1000);
@@ -134,9 +126,7 @@ $(window).scroll(function () {
     displayDiv.classList.add("displayDiv")
     
     setTimeout(() => {
-      console.log("Delayed for 1 second.");
       spanBefore.classList.add("spanBefore")
-      // spanAfter.classList.add("spanAfter")
 
 
       styleElem.innerHTML = "#displayDiv::after {  content: '|';}";
@@ -145,7 +135,6 @@ $(window).scroll(function () {
     }, 1100)
 
     textFlow()
-    console.log('hi')
     scrolled = false
     }
   }
