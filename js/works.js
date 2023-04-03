@@ -1,7 +1,7 @@
 let projectData = [
   {
     title: 'React Business Site',
-    deployment: 'http://jacks-barbershop.herokuapp.com/',
+    deployment: 'https://jacks-barbershop.herokuapp.com/',
     image: '../assets/BarbershopWebsite.png',
     gitHub: 'https://github.com/Brian4755/Jack-s-Barbershop',
     description: 'Barbershop business website made with React and hooks such as useState and useEffect'
