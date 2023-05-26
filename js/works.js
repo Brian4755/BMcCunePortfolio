@@ -7,6 +7,20 @@ let projectData = [
     description: 'Barbershop business website made with React and hooks such as useState and useEffect'
   },
   {
+    title: 'NavigatEDU',
+    deployment: 'https://navigatedu.herokuapp.com/',
+    image: '../assets/NavigatEDU.png',
+    gitHub: 'https://github.com/Brian4755/navigateEDU-frontend',
+    description: '5-day Hackathon project composed of fullstack functionality and complex user experience. Worked with Several UI/UX designers'
+  },
+  {
+    title: 'MusicLyrics',
+    deployment: 'https://musiclyricssearch.netlify.app/',
+    image: '../assets/MusicLyrics.png',
+    gitHub: 'https://github.com/Brian4755/MusicDetails',
+    description: 'API based ReactJS and full-stack application where users can retrieve music lyrics by typing the song title'
+  },
+  {
     title: 'TFT CheatSheet',
     deployment: 'https://tftcheatsheet.herokuapp.com/',
     image: '../assets/TFT.png',
@@ -26,21 +40,7 @@ let projectData = [
     image: '../assets/ShowPro.png',
     gitHub: 'https://github.com/Brian4755/ShowPro',
     description: 'ShowPro is a site used to find Movie/Show recommendations. Composed of Python, Django, CSS, and HTML'
-  },
-  {
-    title: 'NavigatEDU',
-    deployment: 'https://navigatedu.herokuapp.com/',
-    image: '../assets/NavigatEDU.png',
-    gitHub: 'https://github.com/Brian4755/navigateEDU-frontend',
-    description: '5-day Hackathon project composed of fullstack functionality and complex user experience. Worked with Several UI/UX designers'
-  },
-  {
-    title: 'MusicLyrics',
-    deployment: 'https://musiclyricssearch.netlify.app/',
-    image: '../assets/MusicLyrics.png',
-    gitHub: 'https://github.com/Brian4755/MusicDetails',
-    description: 'API based ReactJS and full-stack application where users can retrieve music lyrics by typing the song title'
-  },
+  }
 ]
 
 export {
