@@ -337,6 +337,12 @@ li {
 #card-container {
   color:blue;
   padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 p.card-text {
@@ -344,8 +350,8 @@ p.card-text {
 }
 
 div.card {
-  margin-left: 20px;
-  float: left;
+  /* margin-left: 20px; */
+  /* float: left; */
 }
 
 
@@ -504,7 +510,7 @@ div.card {
   left: 0;
   right: 0;
   color: white;
-  min-height: 200px;
+  /* min-height: 200px; */
 }
 .section3Text {
   opacity: 0;
