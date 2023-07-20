@@ -99,7 +99,7 @@ const projectMaterial = projectData.map(project => {
 }).join('')
 
 function textFlow() {
-  let textAnimation = 'I am a junior software engineer with the desire to work with others and continuously learn through challenges'
+  let textAnimation = 'I am a experienced software engineer with the desire to work with others and create complex front-end components from scratch like this one'
   for (let i = 0; i < textAnimation.length; i++) {
     setTimeout(() => {
       setTimeout(() => { document.getElementById("displayDiv").innerHTML += textAnimation[i]}, 40*i)
