@@ -898,6 +898,12 @@ a {
     background-position: 100% 57%;
     background-size: 38%;
   }
+  #card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section2 {
+    min-height: 2700px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1011,10 +1017,6 @@ a {
     left: 78%;
     top: 360px;
   }
-  .phoneImageContainer {
-    position: absolute;
-    left: 30%;
-  }
   .selfimage2 {
   display: none;
   }
@@ -1042,11 +1044,6 @@ a {
   }
   .section1Background{
     height: 1300px;
-  }
-  .phoneImageContainer {
-    position: absolute;
-    left: 11%;
-    top: 8%;
   }
   .selfimage2 {
     display: inline;
