@@ -8,7 +8,7 @@ let projectData = [
   },
   {
     title: 'NavigatEDU',
-    deployment: 'https://navigatedu.herokuapp.com/',
+    deployment: 'https://navigatedu.netlify.app/',
     image: '../assets/NavigatEDU.png',
     gitHub: 'https://github.com/Brian4755/navigateEDU-frontend',
     description: '5-day Hackathon project composed of fullstack functionality and complex user experience. Worked with Several UI/UX designers'
