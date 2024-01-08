@@ -14,11 +14,11 @@ let projectData = [
     description: '5-day Hackathon project composed of fullstack functionality and complex user experience. Worked with Several UI/UX designers'
   },
   {
-    title: 'MusicLyrics',
-    deployment: 'https://musiclyricssearch.netlify.app/',
-    image: '../assets/MusicLyrics.png',
-    gitHub: 'https://github.com/Brian4755/MusicDetails',
-    description: 'API based ReactJS and full-stack application where users can retrieve music lyrics by typing the song title'
+    title: 'ReactJS Calculator',
+    deployment: 'https://calcreactjavascript.netlify.app/',
+    image: '../assets/Calculator.png',
+    gitHub: 'https://github.com/Brian4755/Calculator',
+    description: 'ReactJS calculator fully designed and functional'
   },
   {
     title: 'TFT CheatSheet',
@@ -35,12 +35,12 @@ let projectData = [
     description: 'Worked under a small group to create a Full stack MERN application that allows users to track meals and workouts using two APIs. Consists of React.js, Mongoose and MongoDB'
   },
   {
-    title: 'ShowPro',
-    deployment: 'https://brian-showpro.herokuapp.com/',
-    image: '../assets/ShowPro.png',
-    gitHub: 'https://github.com/Brian4755/ShowPro',
-    description: 'ShowPro is a site used to find Movie/Show recommendations. Composed of Python, Django, CSS, and HTML'
-  }
+    title: 'MusicLyrics',
+    deployment: 'https://musiclyricssearch.netlify.app/',
+    image: '../assets/MusicLyrics.png',
+    gitHub: 'https://github.com/Brian4755/MusicDetails',
+    description: 'API based ReactJS and full-stack application where users can retrieve music lyrics by typing the song title'
+  },
 ]
 
 export {
